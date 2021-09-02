@@ -12,3 +12,16 @@ main {
 main section {
   margin: 2rem;
 }
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* align-content: center; */
+  /* justify-items: center; */
+  /* justify-content: center; */
+}
+
+#about img {
+  width: 15rem;
+}
