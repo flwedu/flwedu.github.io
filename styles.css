@@ -1,0 +1,14 @@
+body {
+  background-color: #dbdbdb;
+}
+
+main {
+  background-color: #f3f3f3;
+  box-sizing: content-box;
+  width: 50%;
+  margin: auto;
+}
+
+main section {
+  margin: 2rem;
+}
