@@ -1,0 +1,8 @@
+[
+  {
+    "title": "Pokédexjsc",
+    "description": "A simple web application that displays data about a searched Pokémon (yes, like a Pokédex). To work, it consumes data from the PokeAPI.",
+    "applicationLink": "https://pokedexjsc.netlify.app/",
+    "githubLink": "https://github.com/flwedu/pokedex"
+  }
+]

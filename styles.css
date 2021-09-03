@@ -53,4 +53,5 @@ a:hover {
 /* Bootstrap */
 .card {
   background-color: #1c0449;
+  width: 18rem;
 }
