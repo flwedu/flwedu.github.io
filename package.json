@@ -1,0 +1,22 @@
+{
+  "name": "flwedu.github.io",
+  "version": "1.0.0",
+  "description": "Personal page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flwedu/flwedu.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flwedu/flwedu.github.io/issues"
+  },
+  "homepage": "https://github.com/flwedu/flwedu.github.io#readme",
+  "devDependencies": {
+    "ts-node-dev": "^1.1.8"
+  }
+}
