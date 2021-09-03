@@ -33,10 +33,10 @@ var render = (list: any) => {
       <p class="card-text">
         ${project.description}
       </p>
-      <a href=${project.applicationLink} class="btn btn-light"
+      <a href=${project.applicationLink} target="_blank" class="btn btn-light"
         >Visite App</a
       >
-      <a href=${project.githubLink} class="btn btn-light"
+      <a href=${project.githubLink} target="_blank" class="btn btn-light"
         >Github</a
       >
     </div>
