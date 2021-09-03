@@ -11,6 +11,7 @@ main {
   box-sizing: content-box;
   width: 50%;
   margin: auto;
+  margin-top: 5rem;
 }
 
 main section {
@@ -47,6 +48,8 @@ a:hover {
 }
 
 #about img {
+  position: relative;
+  top: -3rem;
   width: 15rem;
 }
 
