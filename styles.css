@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap");
+
 body {
-  background-color: #dbdbdb;
+  background-color: #1a1a1a;
 }
 
 main {
-  background-color: #f3f3f3;
+  font-family: "Roboto", sans-serif;
+  background-color: #333333;
+  color: #ffffff;
   box-sizing: content-box;
   width: 50%;
   margin: auto;
@@ -11,6 +15,23 @@ main {
 
 main section {
   margin: 2rem;
+}
+
+/* Parágrafos / itens individuais */
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  color: #ffffff;
 }
 
 #about {
@@ -21,4 +42,9 @@ main section {
 
 #about img {
   width: 15rem;
+}
+
+/* Bootstrap */
+.card {
+  background-color: #1c0449;
 }
