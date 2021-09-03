@@ -14,6 +14,7 @@ dataLoader.send();
 interface Project {
   title: string,
   description: string,
+  imgUrl: string,
   applicationLink: string,
   githubLink: string
 }
@@ -26,7 +27,7 @@ var render = (list: any) => {
     projectCard.classList.add("card");
 
     projectCard.innerHTML = `
-    <img src="https://i.imgur.com/H3TCZef.png" class="card-img-top" />
+    <img src=${project.imgUrl} class="card-img-top" />
     <div class="card-body">
       <h5 class="card-title">${project.title}</h5>
       <p class="card-text">
