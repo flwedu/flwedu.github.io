@@ -51,7 +51,7 @@ a {
 }
 
 a:hover {
-  color: #ffffff;
+  color: #fc8f00;
   text-decoration: line-through;
 }
 
@@ -70,6 +70,6 @@ a:hover {
 
 /* Bootstrap */
 .card {
-  background-color: #1c0449;
+  background-color: #b66700;
   width: 18rem;
 }
