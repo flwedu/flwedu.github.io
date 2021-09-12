@@ -68,8 +68,15 @@ a:hover {
   width: 15rem;
 }
 
+/* Projects list */
+.projectsList {
+  display: flex;
+  flex-direction: row;
+}
+
 /* Bootstrap */
 .card {
+  margin: 0 2rem;
   background-color: #b66700;
   width: 18rem;
 }
