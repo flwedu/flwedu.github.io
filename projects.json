@@ -5,5 +5,12 @@
     "imgUrl": "https://i.imgur.com/CN7Rx2U.png",
     "applicationLink": "https://pokedexjsc.netlify.app/",
     "githubLink": "https://github.com/flwedu/pokedex"
+  },
+  {
+    "title": "client-sala-reuniao",
+    "description": "A front-end application created with Angular that manages meeting rooms. Created during the 'Santander Fullstack Bootcamp 2021'",
+    "imgUrl": "https://i.imgur.com/z4vpxSC.png",
+    "applicationLink": null,
+    "githubLink": "https://github.com/flwedu/client-sala-reuniao"
   }
 ]
