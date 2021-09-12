@@ -1,15 +1,5 @@
 // Request projects to array
-const dataLoader = new XMLHttpRequest();
-dataLoader.overrideMimeType("application/json");
-dataLoader.open("GET", "projects.json", true);
-dataLoader.onreadystatechange = function () {
-  if (dataLoader.readyState === 4 && dataLoader.status == 200) {
-    let response = JSON.parse(dataLoader.responseText);
-    render(response);
-  }
-}
-
-dataLoader.send();
+fetch("projects.json").then(res => res.json()).then(res => render(res)).catch(error => alert('Error loading projects list'));
 
 interface Project {
   title: string,
@@ -33,12 +23,8 @@ var render = (list: any) => {
       <p class="card-text">
         ${project.description}
       </p>
-      <a href=${project.applicationLink} target="_blank" class="btn btn-light"
-        >Visite App</a
-      >
-      <a href=${project.githubLink} target="_blank" class="btn btn-light"
-        >Github</a
-      >
+      ${project.applicationLink ? "<a href=${project.applicationLink} target='_blank' class='btn btn-light'>Visite App</a>" : ""}
+      <a href=${project.githubLink} target="_blank" class="btn btn-light">Github</a>
     </div>
   `
 
