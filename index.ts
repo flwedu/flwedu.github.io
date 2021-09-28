@@ -23,7 +23,7 @@ var render = (list: any) => {
       <p class="card-text">
         ${project.description}
       </p>
-      ${project.applicationLink ? "<a href=" + project.applicationLink + "target='_blank' class='btn btn-light'>Visite App</a>" : ""}
+      ${project.applicationLink ? "<a href='" + project.applicationLink + "' target='_blank' class='btn btn-light'>Visite App</a>" : ""}
       <a href=${project.githubLink} target="_blank" class="btn btn-light">Github</a>
     </div>
   `
