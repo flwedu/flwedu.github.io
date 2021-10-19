@@ -2,7 +2,7 @@
   {
     "title": "Pokédexjsc",
     "description": "A simple web application that displays data about a searched Pokémon (yes, like a Pokédex). To work, it consumes data from the PokeAPI.",
-    "imgUrl": "https://i.imgur.com/CN7Rx2U.png",
+    "imgUrl": "https://i.imgur.com/3UwLaZA.png",
     "applicationLink": "https://pokedexjsc.netlify.app/",
     "githubLink": "https://github.com/flwedu/pokedex"
   },
