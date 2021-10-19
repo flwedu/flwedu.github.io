@@ -71,8 +71,9 @@ a:hover {
 }
 
 .card img {
-  height: 250px;
+  height: 240px;
   width: 340px;
+  object-fit: cover;
   margin-left: auto;
   margin-right: auto;
 }
