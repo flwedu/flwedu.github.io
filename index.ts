@@ -10,13 +10,23 @@ interface Project {
 }
 
 // Rendering projects list
-var render = (list: any) => {
+const render = (list: any) => {
   let projectsList = document.querySelector(".projectsList");
-  list.forEach(project => {
-    let projectCard = document.createElement("div");
-    projectCard.classList.add("card");
+  list.forEach((project: Project) => {
+    projectsList.appendChild(createCard(project));
+  });
+}
 
-    projectCard.innerHTML = `
+const createCard = (project: Project) => {
+  const newCard = document.createElement("div");
+  newCard.classList.add("card");
+  newCard.innerHTML = generateInnerHtml(project);
+
+  return newCard;
+}
+
+const generateInnerHtml = (project: Project) => {
+  return `
     <img src=${project.imgUrl} class="card-img-top" />
     <div class="card-body">
       <h5 class="card-title">${project.title}</h5>
@@ -27,7 +37,4 @@ var render = (list: any) => {
       <a href=${project.githubLink} target="_blank" class="btn btn-light">Github</a>
     </div>
   `
-
-    projectsList.appendChild(projectCard);
-  });
 }
