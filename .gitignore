@@ -1,2 +1,5 @@
 # Node folder
 /node_modules
+sass/_main.scss
+sass/_variables.scss
+sass/styles.scss
