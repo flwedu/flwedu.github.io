@@ -67,17 +67,17 @@ a:hover {
 
 .card {
   background-color: #b66700;
-  border: transparent 1rem solid;
   border-radius: 0.5rem;
   -webkit-box-shadow: #1a1a1a 1rem 0.5rem;
           box-shadow: #1a1a1a 1rem 0.5rem;
+  padding: 0.5rem;
   margin: 1rem;
   width: 18rem;
 }
 
 .card > img {
-  width: 240px;
-  height: 352px;
+  width: 15rem;
+  height: 22rem;
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0 auto;
