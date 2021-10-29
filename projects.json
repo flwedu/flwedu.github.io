@@ -2,14 +2,14 @@
   {
     "title": "Pokédexjsc",
     "description": "A simple web application that displays data about a searched Pokémon (yes, like a Pokédex). To work, it consumes data from the PokeAPI.",
-    "imgUrl": "https://i.imgur.com/3UwLaZA.png",
+    "imgUrl": "/assets/projects-img/pokedexjsc.png",
     "applicationLink": "https://pokedexjsc.netlify.app/",
     "githubLink": "https://github.com/flwedu/pokedex"
   },
   {
     "title": "client-sala-reuniao",
     "description": "A front-end application created with Angular that manages meeting rooms. Created during the 'Santander Fullstack Bootcamp 2021'",
-    "imgUrl": "https://i.imgur.com/D6KIUPg.png",
+    "imgUrl": "assets/projects-img/client-room.png",
     "applicationLink": null,
     "githubLink": "https://github.com/flwedu/client-sala-reuniao"
   }

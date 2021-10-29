@@ -38,7 +38,7 @@ a {
 }
 
 a:hover {
-  color: #b66700;
+  color: #fc8f00;
   font-weight: bolder;
   text-decoration: underline;
 }
@@ -66,7 +66,7 @@ a:hover {
 }
 
 .card {
-  background-color: #b66700;
+  background-color: #5f5f5f;
   border-radius: 0.5rem;
   -webkit-box-shadow: #1a1a1a 1rem 0.5rem;
           box-shadow: #1a1a1a 1rem 0.5rem;
@@ -78,8 +78,8 @@ a:hover {
 .card > img {
   width: 15rem;
   height: 22rem;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 0 auto;
 }
 
