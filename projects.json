@@ -7,10 +7,10 @@
     "githubLink": "https://github.com/flwedu/pokedex"
   },
   {
-    "title": "client-sala-reuniao",
-    "description": "A front-end application created with Angular that manages meeting rooms. Created during the 'Santander Fullstack Bootcamp 2021'",
-    "imgUrl": "assets/projects-img/client-room.png",
+    "title": "saladereuniao-app",
+    "description": "A front-end application created with Vue.js that manages meeting rooms and events. Created during my front-end studies",
+    "imgUrl": "assets/projects-img/saladereuniao-app.png",
     "applicationLink": null,
-    "githubLink": "https://github.com/flwedu/client-sala-reuniao"
+    "githubLink": "https://github.com/flwedu/saladereuniao-app"
   }
 ]
