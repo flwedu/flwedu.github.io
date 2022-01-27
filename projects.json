@@ -12,5 +12,12 @@
     "imgUrl": "assets/projects-img/saladereuniao-app.png",
     "applicationLink": null,
     "githubLink": "https://github.com/flwedu/saladereuniao-app"
+  },
+  {
+    "title": "desafio_calculadora",
+    "description": "A calculator prototype created during a college challenge. Using TDD, HTML, CSS and Typescript.",
+    "imgUrl": "assets/projects-img/desafio_calculadora.png",
+    "applicationLink": null,
+    "githubLink": "https://github.com/flwedu/desafio_calculadora"
   }
 ]
