@@ -16,7 +16,7 @@
     "url": "https://github.com/flwedu/flwedu.github.io/issues"
   },
   "homepage": "https://github.com/flwedu/flwedu.github.io#readme",
-  "devDependencies": {
-    "ts-node-dev": "^1.1.8"
+  "dependencies": {
+    "typescript": "^4.6.3"
   }
 }
