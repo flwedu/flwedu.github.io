@@ -17,7 +17,7 @@
     "title": "desafio_calculadora",
     "description": "A calculator prototype created during a college challenge. Using TDD, HTML, CSS and Typescript.",
     "imgUrl": "assets/projects-img/desafio_calculadora.png",
-    "applicationLink": null,
+    "applicationLink": "https://desafio-calculadora.netlify.app",
     "githubLink": "https://github.com/flwedu/desafio_calculadora"
   }
 ]
