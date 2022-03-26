@@ -8,15 +8,14 @@ main {
   font-family: "Roboto", sans-serif;
   background-color: #333333;
   color: #ffffff;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   margin: auto;
   margin-top: 5rem;
   max-width: 50rem;
-}
-
-main section {
-  margin: 2rem;
+  display: grid;
+  grid-auto-columns: auto;
+  text-align: center;
+  align-content: center;
 }
 
 /* Parágrafos / itens individuais */
@@ -37,39 +36,48 @@ a {
   color: #ffffff;
 }
 
+li {
+  list-style-type: none;
+}
+
 a:hover {
   color: #fc8f00;
   font-weight: bolder;
   text-decoration: underline;
 }
 
-#about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-#about img {
+.about__header > img {
   position: relative;
   -webkit-box-shadow: #1a1a1a 0.5rem 0.5rem;
-          box-shadow: #1a1a1a 0.5rem 0.5rem;
+  box-shadow: #1a1a1a 0.5rem 0.5rem;
   top: -3rem;
   width: 15rem;
+}
+
+img:hover {
+  animation: growing 500ms forwards;
+}
+
+.about__info {
+  align-items: center;
+  align-content: center;
+}
+
+.about__technologies > img {
+  background-color: #5f5f5f;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: #1a1a1a 1rem 0.5rem;
+  box-shadow: #1a1a1a 0.5rem 0.5rem;
+  padding: 0.3rem;
+  margin: 1rem;
+  width: 10rem;
 }
 
 .card {
   background-color: #5f5f5f;
   border-radius: 0.5rem;
   -webkit-box-shadow: #1a1a1a 1rem 0.5rem;
-          box-shadow: #1a1a1a 1rem 0.5rem;
+  box-shadow: #1a1a1a 1rem 0.5rem;
   padding: 0.5rem;
   margin: 1rem;
   width: 18rem;
@@ -79,36 +87,19 @@ a:hover {
   width: 15rem;
   height: 22rem;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   margin: 0 auto;
 }
 
-/* Responsibilidade */
-@media (max-width: 1000px) {
-  main {
-    width: 80%;
-  }
-  .card {
-    min-width: 18rem;
-  }
+.card img:hover {
+  animation: growing 2s forwards;
 }
 
-@media (max-width: 850px) {
-  .card {
-    min-width: 18rem;
+@keyframes growing {
+  from {
+    transform: scale(1);
   }
-}
-
-@media (max-width: 420px) {
-  main {
-    width: 90%;
-  }
-  .card p {
-    font-size: smaller;
-  }
-  .card img {
-    width: 0px;
-    height: 0px;
-    display: none;
+  to {
+    transform: scale(1.2);
   }
 }
