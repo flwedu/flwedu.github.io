@@ -19,5 +19,12 @@
     "imgUrl": "assets/projects-img/desafio_calculadora.png",
     "applicationLink": "https://desafio-calculadora.netlify.app",
     "githubLink": "https://github.com/flwedu/desafio_calculadora"
+  },
+  {
+    "title": "memory-game",
+    "description": "This is a card game. You can choose two cards at a time and try to find two cards that are exactly the same.",
+    "imgUrl": "assets/projects-img/memory-game.png",
+    "applicationLink": "https://glittery-raindrop-1b312c.netlify.app/",
+    "githubLink": "https://github.com/flwedu/card-memory-game"
   }
 ]
