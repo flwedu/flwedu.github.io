@@ -7,11 +7,11 @@
     "githubLink": "https://github.com/flwedu/pokedex"
   },
   {
-    "title": "card-memory-game",
+    "title": "memory-card-game",
     "description": "This is a card game. You can choose two cards at a time and try to find two cards that are exactly the same.",
     "imgUrl": "assets/projects-img/memory-game.png",
     "applicationLink": "https://card-memory-game-js.netlify.app/",
-    "githubLink": "https://github.com/flwedu/card-memory-game"
+    "githubLink": "https://github.com/flwedu/memory-card-game"
   },
   {
     "title": "desafio_calculadora",
