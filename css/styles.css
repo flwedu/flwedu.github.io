@@ -59,15 +59,9 @@ a:hover {
   text-decoration: underline;
 }
 
-.about__info {
-  align-items: center;
-  align-content: center;
-}
-
-.about__technologies > img {
-  background-color: var(--color_grey);
-  border-radius: 0.3rem;
-  margin: 0.5rem;
+.img {
+  width: 100vh;
+  margin-bottom: 3rem;
 }
 
 .card {
