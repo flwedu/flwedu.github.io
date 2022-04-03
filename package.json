@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/flwedu/flwedu.github.io/issues"
   },
-  "homepage": "https://github.com/flwedu/flwedu.github.io#readme",
-  "dependencies": {
-    "typescript": "^4.6.3"
-  }
+  "homepage": "https://github.com/flwedu/flwedu.github.io#readme"
 }
