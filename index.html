@@ -88,59 +88,20 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="/projects.html">Projects</a>
+            <a class="nav-link" href="/projects.html">Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/technologies.html">Tecnologias</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="/index.html">Home</a>
           </li>
         </ul>
       </nav>
-
-     <div style="position: relative; width: 100%; height: 0; padding-top: 88.8889%;
- padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAE82XpTOUk&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-
-    <script src="index.js"></script>
-    <script>
-      "use strict";
-      const renderTechnologies = (list) => {
-        const techListEl = document.querySelector("#techList");
-        list.forEach((item) => {
-          const el = document.createElement("img");
-          el.src = item.src;
-          el.alt = item.alt;
-          techListEl.appendChild(el);
-        });
-      };
-      const generateCardInnerHtml = (project) => {
-        return `
-  <div class="col-12">
-    <img src=${project.imgUrl} class="card-img-top" />
-    <div class="card-body">
-    <h5 class="card-title">${project.title}</h5>
-    <p class="card-text">
-    ${project.description}
-    </p>
-      ${
-        project.applicationLink
-          ? "<a href='" +
-            project.applicationLink +
-            "' target='_blank' class='btn btn-light'>Visite App</a>"
-          : ""
-      }
-      <a href=${
-        project.githubLink
-      } target="_blank" class="btn btn-light">Github</a>
+      <div>
+        <img class="img" src="assets/projects-img/Home Page.png" alt="Info about Eduardo">
       </div>
-      </div>
-      `;
-      };
 
-      loadFromJson("./res/technologies.json", renderTechnologies);
-    </script>
+    <script src="index.js"></script>      
   </body>
 </html>
