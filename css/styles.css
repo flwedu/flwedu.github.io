@@ -49,21 +49,14 @@ li {
   list-style-type: none;
 }
 
+#projectsList {
+  justify-content: center;
+}
+
 a:hover {
   color: var(--color_grey_blue);
   font-weight: bolder;
   text-decoration: underline;
-}
-
-.about__header > img {
-  position: relative;
-  top: -3rem;
-  width: 15rem;
-  margin: auto 0;
-}
-
-img:hover {
-  animation: growing 500ms forwards;
 }
 
 .about__info {
@@ -87,6 +80,7 @@ img:hover {
 }
 
 .card > img {
+  animation: growing 500ms forwards;
   width: 15rem;
   height: 22rem;
   -o-object-fit: contain;
