@@ -8,7 +8,7 @@
   },
   {
     "title": "memory-card-game",
-    "description": "É um jogo de cartas, conhecido como jogo da memória. Para ganhar você deve virar as duas cartas por vez, e encontrar os pares.",
+    "description": "É um jogo de cartas, conhecido como jogo da memória. Para ganhar você deve virar duas cartas por vez, e encontrar os pares.",
     "imgUrl": "assets/projects-img/memory-game.png",
     "applicationLink": "https://card-memory-game-js.netlify.app/",
     "githubLink": "https://github.com/flwedu/memory-card-game"
