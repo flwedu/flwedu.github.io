@@ -33,7 +33,7 @@ const generateCardInnerHtml = (project) => {
             ${project.description}
             </p>
             </div>
-            <div class"card-footer">
+            <div class="card-footer">
             ${
               project.applicationLink
                 ? "<a href='" +
