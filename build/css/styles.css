@@ -36,10 +36,15 @@ nav {
   z-index: 99;
 }
 
-nav li {
-  float: left;
+nav ul li {
   list-style: none;
-  margin-left: 20px;
+  margin: 0 auto;
+  border-left: 2px dotted #565573;
+  display: inline-block;
+  padding: 0 30px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
 }
 
 nav a {
@@ -49,6 +54,40 @@ nav a {
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 500;
+}
+
+nav a:hover {
+  color: #272559;
+}
+
+nav ul li ul {
+  visibility: hidden;
+  position: absolute;
+  padding-left: 0;
+  left: 0;
+  left: 0;
+  display: none;
+  background: #ffffff;
+}
+
+nav ul li:hover > ul,
+nav ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  width: 10rem;
+  text-align: left;
+  padding-top: 20px;
+  -webkit-box-shadow: 0px 3px 5px -1px #9592a6;
+          box-shadow: 0px 3px 5px -1px #9592a6;
+}
+
+nav ul li ul li {
+  clear: both;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  border-style: none;
 }
 
 hr {
@@ -130,20 +169,34 @@ section#technologies .misc {
 }
 
 .card {
-  margin: 10px;
+  margin: 5px;
   background-color: #ffffff;
   border-radius: 10px;
   width: 18rem;
   height: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card img {
+  margin: 0;
   width: 90%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+.card-header {
+  margin: 5px;
+  height: 16rem;
+}
+
 .card-body {
+  height: 16rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,7 +210,7 @@ section#technologies .misc {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .card-footer {
@@ -184,8 +237,6 @@ section#technologies .misc {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .card .tag {
@@ -261,5 +312,16 @@ section#technologies .misc {
   }
   p {
     font-size: 1rem;
+  }
+  nav {
+    height: 4rem;
+  }
+  nav ul li {
+    font-size: medium;
+    border-left: none;
+    padding: 0 30px;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
   }
 }
