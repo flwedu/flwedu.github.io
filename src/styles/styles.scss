@@ -31,6 +31,7 @@ p {
 }
 
 body {
+  margin: 0;
   background-color: $color_bg;
   display: grid;
   justify-items: center;
@@ -53,6 +54,10 @@ nav {
     position: relative;
     text-decoration: none;
     text-align: center;
+
+    &:first-child {
+      border-left: none;
+    }
   }
 
   a {
@@ -260,15 +265,36 @@ section {
 }
 
 @media (max-width: 800px) {
+  section {
+    padding: 1rem 2rem;
+  }
+
   h1 {
     text-align: center;
+  }
+  p {
+    text-align: justify;
+  }
+
+  nav {
+    a {
+      font-size: 1rem;
+    }
+
+    ul li {
+      display: inline-flexbox;
+      flex-direction: row;
+      border-left: none;
+      padding: 10px;
+    }
   }
 
   .sideBySide {
     flex-direction: column-reverse;
 
     p {
-      text-align: center !important;
+      width: 100% !important;
+      text-align: justify !important;
     }
   }
 
@@ -281,10 +307,16 @@ section {
 
 @media (max-width: 500px) {
   section {
-    width: 20rem;
+    padding: 1rem;
+    width: 18rem;
+  }
+
+  h1 {
+    font-size: 3rem;
   }
 
   p {
+    text-align: justify;
     font-size: 1rem;
   }
 

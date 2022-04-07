@@ -19,6 +19,7 @@ p {
 }
 
 body {
+  margin: 0;
   background-color: #efefef;
   display: -ms-grid;
   display: grid;
@@ -45,6 +46,10 @@ nav ul li {
   position: relative;
   text-decoration: none;
   text-align: center;
+}
+
+nav ul li:first-child {
+  border-left: none;
 }
 
 nav a {
@@ -289,8 +294,26 @@ section#technologies .misc {
 }
 
 @media (max-width: 800px) {
+  section {
+    padding: 1rem 2rem;
+  }
   h1 {
     text-align: center;
+  }
+  p {
+    text-align: justify;
+  }
+  nav a {
+    font-size: 1rem;
+  }
+  nav ul li {
+    display: inline-flexbox;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-left: none;
+    padding: 10px;
   }
   .sideBySide {
     -webkit-box-orient: vertical;
@@ -299,7 +322,8 @@ section#technologies .misc {
             flex-direction: column-reverse;
   }
   .sideBySide p {
-    text-align: center !important;
+    width: 100% !important;
+    text-align: justify !important;
   }
   #about img {
     width: calc(100vh / 3) !important;
@@ -308,9 +332,14 @@ section#technologies .misc {
 
 @media (max-width: 500px) {
   section {
-    width: 20rem;
+    padding: 1rem;
+    width: 18rem;
+  }
+  h1 {
+    font-size: 3rem;
   }
   p {
+    text-align: justify;
     font-size: 1rem;
   }
   nav {
