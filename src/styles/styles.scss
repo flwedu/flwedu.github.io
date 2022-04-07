@@ -123,23 +123,32 @@ section {
 }
 
 .card {
-  margin: 10px;
+  margin: 5px;
   background-color: $color_light;
   border-radius: 10px;
   width: 18rem;
   height: 40rem;
+  display: flex;
+  flex-direction: column;
 
   img {
+    margin: 0;
     width: 90%;
     object-fit: cover;
   }
 
+  &-header {
+    margin: 5px;
+    height: 16rem;
+  }
+
   &-body {
+    height: 16rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 10px;
+    padding: 0 10px;
   }
 
   &-footer {
@@ -152,7 +161,6 @@ section {
   .tags {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
   }
 
   .tag {
