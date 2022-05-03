@@ -132,9 +132,13 @@ section {
       text-align: end;
     }
     img {
-      width: 20rem;
+      &#avatar_img {
+        width: 18rem;
+        border-radius: 50%;
+      }
 
       &.misc {
+        border-radius: none;
         position: sticky;
         right: 100vh;
         width: 20rem;
