@@ -135,11 +135,13 @@ section#about p {
   text-align: end;
 }
 
-section#about img {
-  width: 20rem;
+section#about img#avatar_img {
+  width: 18rem;
+  border-radius: 50%;
 }
 
 section#about img.misc {
+  border-radius: none;
   position: -webkit-sticky;
   position: sticky;
   right: 100vh;
