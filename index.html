@@ -54,11 +54,15 @@
           Desenvolvimento Web Full-Stack. Fã de tecnologia, videogames e
           estética cyberpunk.
         </p>
-        <img src="assets/good.png" alt="Foto arredondada de Eduardo" />
+        <img
+          id="avatar_img"
+          src="https://www.gravatar.com/avatar/061af413a7c2661473b4b595c6ef55e3?s=300"
+          alt="Foto arredondada do Gravatar"
+        />
       </div>
       <img
         src="assets/circle.png"
-        alt="Uma ilustração em wireframe de um círculo"
+        alt="Uma ilustração de um círculo"
         class="misc"
       />
     </section>
@@ -109,27 +113,27 @@
 
     <script>
       "use strict";
-const loadFromJson = (filePath, cb) => {
-  fetch(filePath)
-    .then((res) => res.json())
-    .then(cb)
-    .catch(console.error);
-};
+      const loadFromJson = (filePath, cb) => {
+        fetch(filePath)
+          .then((res) => res.json())
+          .then(cb)
+          .catch(console.error);
+      };
 
-const renderProjects = (list) => {
-  const projectsListEl = document.querySelector("#projects_list");
-  list.forEach((item) => {
-    const cardEl = document.createElement("div");
-    cardEl.classList.add("card");
-    cardEl.innerHTML = generateCardInnerHtml(item);
-    projectsListEl.appendChild(cardEl);
-  });
-};
+      const renderProjects = (list) => {
+        const projectsListEl = document.querySelector("#projects_list");
+        list.forEach((item) => {
+          const cardEl = document.createElement("div");
+          cardEl.classList.add("card");
+          cardEl.innerHTML = generateCardInnerHtml(item);
+          projectsListEl.appendChild(cardEl);
+        });
+      };
 
-const generateCardInnerHtml = (project) => {
-  const generateTagHtml = (tag) => `<span class='tag'>${tag}</span>`;
+      const generateCardInnerHtml = (project) => {
+        const generateTagHtml = (tag) => `<span class='tag'>${tag}</span>`;
 
-  return `
+        return `
             <div class="card">
             <div class="card-header">
             <img src=${project.imgUrl} />
@@ -157,9 +161,9 @@ const generateCardInnerHtml = (project) => {
             </div>
             </div>
             `;
-};
+      };
 
-loadFromJson("./res/projects.json", renderProjects);
+      loadFromJson("./res/projects.json", renderProjects);
     </script>
   </body>
 </html>
