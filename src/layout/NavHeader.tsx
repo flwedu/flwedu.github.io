@@ -1,22 +1,22 @@
+import { Link } from "react-router-dom";
+
 export function NavHeader() {
   return (
-    <nav className="bg-white border-gray-200 px-2 sm:px-4 py-1 rounded dark:bg-gray-800">
-      <div className="container flex flex-wrap justify-between items-center mx-auto">
-        <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium">
-          <li>
-            <a href="#about">Home</a>
-          </li>
-          <li>
-            <a href="#technologies">Tecnologias</a>
-          </li>
-          <li>
-            <a href="#projects">Projetos</a>
-          </li>
-          <li>
-            <a href="#links">Links</a>
-          </li>
-        </ul>
-      </div>
+    <nav className="sticky container flex flex-row mx-auto justify-center content-center top-0 max-w-3xl h-12 bg-white border-gray-200 dark:bg-gray-800 rounded shadow-md">
+      <ul className="flex flex-row justify-center items-center gap-5">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/technologies">Tecnologias</Link>
+        </li>
+        <li>
+          <Link to="/projects">Projetos</Link>
+        </li>
+        <li>
+          <Link to="/links">Links</Link>
+        </li>
+      </ul>
     </nav>
   );
 }
