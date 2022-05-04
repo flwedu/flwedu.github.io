@@ -19,7 +19,7 @@ export function ProjectsList() {
   }, []);
 
   return (
-    <section>
+    <section id="projects">
       <h1>Projetos desenvolvidos</h1>
 
       <p>
