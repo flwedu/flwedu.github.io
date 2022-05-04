@@ -17,7 +17,7 @@
   },
   {
     "title": "punk-barbershop-backend",
-    "description": "Uma API Rest que utiliza comunica com um banco de dados mongoDb. O intuito principal foi aplicar alguns conceitos aprendidos durante os estudos de DDD, TDD, Clean Architecture e Node.js",
+    "description": "API Rest com uma database NoSQL (MongoDB). Criada para aplicar alguns conceitos aprendidos durante os estudos de DDD, TDD, Clean Architecture e Node.js",
     "tags": ["Node.js", "Typescript", "Back-end"],
     "imgUrl": "/assets/projects-img/punk-barbershop-backend.png",
     "applicationLink": null,
