@@ -2,7 +2,7 @@ import { GithubLogo, LinkedinLogo, TwitterLogo } from "phosphor-react";
 
 export function Links() {
   return (
-    <section id="links">
+    <section id="links" className="flex text-center items-center">
       <h1> Links </h1>
       <a href="https://github.com/flwedu" target="_blank">
         <div className="flex w-24 items-center">

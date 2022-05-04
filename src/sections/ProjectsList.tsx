@@ -19,14 +19,14 @@ export function ProjectsList() {
   }, []);
 
   return (
-    <section id="projects">
+    <section id="projects" className="text-center flex items-center">
       <h1>Projetos desenvolvidos</h1>
 
       <p>
         Esses são alguns projetos que achei bastante desafiadores e pude aplicar
         o que estava estudando durante o período do desenvolvimento.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 content-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 content-center">
         {projectsList.map((el) => (
           <ProjectCard project={el} key={el.title} />
         ))}
