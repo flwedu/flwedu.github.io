@@ -15,5 +15,5 @@ Terceira versão do meu site pessoal. Agora utilizando [React.js](https://reactj
 ## Recursos da página
 
 - [x] dark-mode
-- [] routing
-- [] languages: pt-br / en
+- [ ] routing
+- [ ] languages: pt-br / en
