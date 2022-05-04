@@ -25,3 +25,7 @@ h3 {
 p {
   @apply text-slate-500 dark:text-slate-400;
 }
+
+a {
+  @apply text-slate-900 dark:text-white font-semibold;
+}
