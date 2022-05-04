@@ -4,6 +4,7 @@ import { AboutMe } from "./sections/AboutMe";
 import { NavHeader } from "./layout/NavHeader";
 import { Technologies } from "./sections/Technologies";
 import { ProjectsList } from "./sections/ProjectsList";
+import { Links } from "./sections/Links";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <AboutMe />
         <Technologies />
         <ProjectsList />
+        <Links />
       </main>
       <DarkModeButton />
     </div>

@@ -1,47 +1,22 @@
 export function NavHeader() {
   return (
-    <nav>
-      <ul>
-        <li>
-          <a href="#about">Home</a>
-        </li>
-        <li>
-          <a href="#technologies">Tecnologias</a>
-        </li>
-        <li>
-          <a href="#projects">Projetos</a>
-        </li>
-        <li>
-          <a href="#">Links &dtrif;</a>
-          <ul className="dropdown">
-            <li>
-              <a href="https://github.com/flwedu" target="_blank">
-                GitHub{" "}
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/emprestavel" target="_blank">
-                Twitter
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/edu-aquino/" target="_blank">
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a href="https://www.codewars.com/users/flwedu" target="_blank">
-                Codewars
-              </a>
-            </li>
-            <li>
-              <a href="https://www.hackerrank.com/edutraquino" target="_blank">
-                HackerRank
-              </a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+    <nav className="bg-white border-gray-200 px-2 sm:px-4 py-1 rounded dark:bg-gray-800">
+      <div className="container flex flex-wrap justify-between items-center mx-auto">
+        <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium">
+          <li>
+            <a href="#about">Home</a>
+          </li>
+          <li>
+            <a href="#technologies">Tecnologias</a>
+          </li>
+          <li>
+            <a href="#projects">Projetos</a>
+          </li>
+          <li>
+            <a href="#links">Links</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 }
