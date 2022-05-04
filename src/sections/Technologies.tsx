@@ -9,7 +9,7 @@ export function Technologies() {
         organizados e fácil de manter, como Clean Code, Clean Architecture, DDD
         e TDD. Tecnologias de interesse:
       </p>
-      <div className="grid text-center mt-2 text-xl sm:grid-cols-2 text-mainPurple dark:text-slate-300">
+      <div className="grid text-center mt-2 text-xl sm:grid-cols-2 text-mainPurple-500 dark:text-slate-300">
         <ul>
           <li>Javascript</li>
           <li>Node.js</li>
