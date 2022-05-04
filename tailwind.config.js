@@ -10,7 +10,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        mainPurple: "#7843e6",
+        mainPurple: {
+          100: "#AA8AEA",
+          500: "#7843e6",
+          700: "#4A3C66",
+          900: "#361E66",
+        },
       },
     },
   },
