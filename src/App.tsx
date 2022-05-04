@@ -1,4 +1,5 @@
 import "./tailwind.css";
+import "./styles.css";
 import { DarkModeButton } from "./components/DarkModeButton";
 import { AboutMe } from "./sections/AboutMe";
 import { NavHeader } from "./layout/NavHeader";

@@ -2,30 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-slate-100 dark:bg-slate-900;
-}
+@layer base {
+  body {
+    @apply bg-slate-100 dark:bg-slate-900;
+  }
 
-main {
-  @apply max-w-3xl p-6 mx-auto flex-col;
-}
+  main {
+    @apply max-w-3xl p-6 mx-auto flex-col;
+  }
 
-section {
-  @apply bg-white dark:bg-slate-800 p-6 mx-auto my-2 rounded-xl shadow-lg flex-col  space-x-4;
-}
+  section {
+    @apply bg-white dark:bg-slate-800 p-6 mx-auto my-2 rounded-xl shadow-lg flex-col  space-x-4;
+  }
 
-h1 {
-  @apply text-center my-4 text-slate-900 dark:text-white text-4xl font-semibold;
-}
+  h1 {
+    @apply text-center my-4 text-slate-900 dark:text-white text-4xl font-semibold;
+  }
 
-h3 {
-  @apply text-center text-slate-900 dark:text-white text-2xl font-semibold;
-}
+  h3 {
+    @apply text-center text-slate-900 dark:text-white text-2xl font-semibold;
+  }
 
-p {
-  @apply text-slate-500 dark:text-slate-400;
-}
+  p {
+    @apply text-slate-500 dark:text-slate-400;
+  }
 
-a {
-  @apply text-slate-900 dark:text-white font-semibold;
+  a {
+    @apply text-slate-900 dark:text-white font-semibold;
+  }
 }
