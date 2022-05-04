@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Pokédexjsc",
+    "description": "Uma aplicação que mostra dados sobre pokémons (sim, como uma pokédex). Consome a PokeAPI. Primeira aplicação web que desenvolvi, utilizando webpack, typescript, HTML e SCSS",
+    "tags": ["HTML", "CSS", "Javascript"],
+    "imgUrl": "/assets/projects-img/pokedexjsc.png",
+    "applicationLink": "https://pokedexjsc.netlify.app/",
+    "githubLink": "https://github.com/flwedu/pokedex"
+  },
+  {
+    "title": "memory-card-game",
+    "description": "É um jogo de cartas, conhecido como jogo da memória. Para ganhar você deve virar duas cartas por vez, e encontrar os pares.",
+    "tags": ["HTML", "CSS", "Javascript"],
+    "imgUrl": "assets/projects-img/memory-game.png",
+    "applicationLink": "https://card-memory-game-js.netlify.app/",
+    "githubLink": "https://github.com/flwedu/memory-card-game"
+  },
+  {
+    "title": "punk-barbershop-backend",
+    "description": "Uma API Rest que utiliza comunica com um banco de dados mongoDb. O intuito principal foi aplicar alguns conceitos aprendidos durante os estudos de DDD, TDD, Clean Architecture e Node.js",
+    "tags": ["Node.js", "Typescript", "Back-end"],
+    "imgUrl": "/assets/projects-img/punk-barbershop-backend.png",
+    "applicationLink": null,
+    "githubLink": "https://github.com/flwedu/punk-barbershop-backend"
+  },
+  {
+    "title": "desafio_calculadora",
+    "description": "Um projeto de calculadora criado durante um desafio da faculdade. Criada para exercitar conceitos de TDD.",
+    "tags": ["HTML", "CSS", "Javascript"],
+    "imgUrl": "assets/projects-img/desafio_calculadora.png",
+    "applicationLink": "https://desafio-calculadora.netlify.app",
+    "githubLink": "https://github.com/flwedu/desafio_calculadora"
+  },
+  {
+    "title": "saladereuniao-app",
+    "description": " Uma aplicação web para gerenciar salas de reuniões e eventos. O objetivo principal foi treinar conceitos de desenvolvimento web com o framework Vue.js",
+    "tags": ["Vue.js"],
+    "imgUrl": "assets/projects-img/saladereuniao-app.png",
+    "applicationLink": null,
+    "githubLink": "https://github.com/flwedu/saladereuniao-app"
+  }
+]
