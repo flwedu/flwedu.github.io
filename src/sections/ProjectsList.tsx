@@ -19,7 +19,7 @@ export function ProjectsList() {
   }, []);
 
   return (
-    <section id="projects" className="text-center flex items-center">
+    <section id="projects" className="">
       <h1>Projetos desenvolvidos</h1>
 
       <p>

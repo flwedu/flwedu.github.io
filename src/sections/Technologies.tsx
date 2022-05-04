@@ -1,6 +1,6 @@
 export function Technologies() {
   return (
-    <section id="technologies" className="text-center">
+    <section id="technologies" className="">
       <h1>Tecnologias</h1>
       <p>
         Aprendi Java e Orientação a Objetos durante a faculdade, mas me
