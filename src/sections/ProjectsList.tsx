@@ -26,7 +26,7 @@ export function ProjectsList() {
         Esses são alguns projetos que achei bastante desafiadores e pude aplicar
         o que estava estudando durante o período do desenvolvimento.
       </p>
-      <div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 content-center">
         {projectsList.map((el) => (
           <ProjectCard project={el} key={el.title} />
         ))}

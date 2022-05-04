@@ -8,9 +8,21 @@ export type Project = {
 };
 
 export function ProjectCard(props: { project: Project }) {
+  const { project } = props;
+
   return (
-    <div>
-      <div>{props.project.title}</div>
+    <div className="flex max-w-sm p-1 my-2 rounded-lg shadow-lg flex-col space-x-4">
+      <div className="flex justify-center">
+        <img
+          src={project.imgUrl}
+          alt="Imagem do projeto"
+          className="w-40 rounded-sm"
+        />
+      </div>
+      <div>
+        <h3>{project.title}</h3>
+        <p>{project.description}</p>
+      </div>
     </div>
   );
 }
