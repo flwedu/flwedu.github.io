@@ -9,10 +9,10 @@ export function DarkModeButton() {
 
   return (
     <div
-      className="absolute right-2 bottom-2 rounded-full bg-violet-500"
+      className="sticky bottom-2 self-end rounded-full w-9 bg-slate-900 dark:bg-slate-100"
       onClick={toggleDarkMode}
     >
-      <Alien size={36} />
+      <Alien size={36} className="text-slate-100 dark:text-slate-900" />
     </div>
   );
 }
