@@ -1,5 +1,5 @@
-import jsonPtBr from "../../assets/res/projects.json";
-import jsonEn from "../../assets/res/projects_en.json";
+import jsonPtBr from "../../static/res/projects.json";
+import jsonEn from "../../static/res/projects_en.json";
 import { Project } from "../components/ProjectCard";
 
 export class ProjectsListService {
