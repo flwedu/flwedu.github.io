@@ -1,93 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flwedu's homepage</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>flwedu page 🐱‍🐉</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link href="./css/styles.css" rel="stylesheet" />
-</head>
-
-<body>
-  <main class="container-sm">
-    <section class="container-sm about__header">
-      <img src="https://avatars.githubusercontent.com/u/55285816?s=400&u=782944217365d6f70baaf97d7da3b4aba4758b42&v=4"
-        class="rounded-circle" alt="User image" />
-    </section>
-    <section class="about__info">
-      <h1>Eduardo Aquino</h1>
-      <p>
-        Hey, I'm a student of software development. Graduated in Systems
-        Analysis and Development and post-graduated in Fullstack Web
-        Development.
-      </p>
-      <div class="about__technologies">
-        <p>My favorites technologies:</p>
-
-        <img
-          src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
-          alt="Javascript" />
-
-        <img
-          src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
-          alt="TypeScript" />
-
-        <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
-          alt="NodeJS" />
-
-        <img src="https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white"
-          alt="Jest" />
-
-
-
-        <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white"
-          alt="Java" />
-
-        <img src="https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white"
-          alt="Spring" />
-
-        <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"
-          alt="Git" />
-
-        <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
-          alt="GitHub" />
-
-      </div>
-      </div>
-    </section>
-    <section class="container-sm about__links">
-      <h2>My Links</h2>
-      <ul>
-        <li>
-          <a href="https://github.com/flwedu" target="_blank">GitHub </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/emprestavel" target="_blank">Twitter
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/edu-aquino/" target="_blank">LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="https://www.codewars.com/users/flwedu" target="_blank">Codewars</a>
-        </li>
-        <li>
-          <a href="https://www.hackerrank.com/edutraquino" target="_blank">HackerRank</a>
-        </li>
-      </ul>
-    </section>
-    <section class="about__projects">
-      <h2>Personal Projects</h2>
-      <div class="container-md">
-        <div class="row g-2" id="projectsList"></div>
-      </div>
-    </section>
-  </main>
-  <script src="index.js"></script>
-</body>
-
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      })(window.location);
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

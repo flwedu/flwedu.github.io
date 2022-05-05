@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-100 dark:bg-slate-900;
+  }
+
+  main {
+    @apply max-w-3xl px-8 mx-auto flex-col;
+  }
+
+  section {
+    @apply bg-white dark:bg-slate-800 p-8 my-8 mx-auto rounded-xl shadow-lg space-x-4 min-h-[20rem] flex flex-col content-between text-center items-center;
+  }
+
+  h1 {
+    @apply text-center my-4 text-slate-900 dark:text-white text-4xl font-semibold;
+  }
+
+  h3 {
+    @apply text-center text-slate-900 dark:text-white text-2xl font-semibold;
+  }
+
+  p {
+    @apply text-slate-500 dark:text-slate-400;
+  }
+
+  a {
+    @apply text-slate-900 dark:text-white font-semibold;
+  }
+}
