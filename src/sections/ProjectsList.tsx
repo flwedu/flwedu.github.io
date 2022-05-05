@@ -3,10 +3,7 @@ import { Project, ProjectCard } from "../components/ProjectCard";
 import { ProjectsListService } from "../service/projects-list-service";
 
 export function ProjectsList() {
-  const projectsListPath = "../../assets/res/projects.json";
-  const projectsListPathEn = "../../assets/res/projects_en.json";
-
-  const service = new ProjectsListService(projectsListPath);
+  const service = new ProjectsListService();
 
   const [projectsList, setProjectsList] = useState<Project[]>([]);
   useEffect(() => {
