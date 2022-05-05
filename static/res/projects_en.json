@@ -2,28 +2,28 @@
   {
     "title": "Pokédexjsc",
     "description": "A simple web application that displays data about a searched Pokémon (yes, like a Pokédex). To work, it consumes data from the PokeAPI.",
-    "imgUrl": "/assets/projects-img/pokedexjsc.png",
+    "imgUrl": "https://i.imgur.com/cSuU2ZB.png",
     "applicationLink": "https://pokedexjsc.netlify.app/",
     "githubLink": "https://github.com/flwedu/pokedex"
   },
   {
     "title": "memory-card-game",
     "description": "This is a card game. You can choose two cards at a time and try to find two cards that are exactly the same.",
-    "imgUrl": "assets/projects-img/memory-game.png",
+    "imgUrl": "https://i.imgur.com/dnuIEeD.png",
     "applicationLink": "https://card-memory-game-js.netlify.app/",
     "githubLink": "https://github.com/flwedu/memory-card-game"
   },
   {
     "title": "desafio_calculadora",
     "description": "A calculator prototype created during a college challenge. Using TDD, HTML, CSS and Typescript.",
-    "imgUrl": "assets/projects-img/desafio_calculadora.png",
+    "imgUrl": "https://i.imgur.com/lgQg6eF.png",
     "applicationLink": "https://desafio-calculadora.netlify.app",
     "githubLink": "https://github.com/flwedu/desafio_calculadora"
   },
   {
     "title": "saladereuniao-app",
     "description": "A front-end application created with Vue.js that manages meeting rooms and events. Created during my front-end studies",
-    "imgUrl": "assets/projects-img/saladereuniao-app.png",
+    "imgUrl": "https://i.imgur.com/bcv08KS.png",
     "applicationLink": null,
     "githubLink": "https://github.com/flwedu/saladereuniao-app"
   }
