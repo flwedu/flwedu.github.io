@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/flwedu/flwedu.github.io/issues"
   },
-  "homepage": "https://github.com/flwedu/flwedu.github.io",
+  "homepage": "https://flwedu.github.io/",
   "dependencies": {
     "phosphor-react": "^1.4.1",
     "react": "^18.1.0",
