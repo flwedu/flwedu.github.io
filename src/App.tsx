@@ -33,6 +33,11 @@ function App() {
     return setText(TEXT_PTBR);
   };
 
+  const toggleDarkMode = () => {
+    document.documentElement.classList.toggle("dark");
+    setDarkmode(document.documentElement.classList.contains("dark"));
+  };
+
   return (
     <div className="App">
       <main>
@@ -50,7 +55,7 @@ function App() {
           </TextContext.Provider>
         </HashRouter>
       </main>
-      <DarkModeButton />
+      <DarkModeButton toggleDarkMode={toggleDarkMode} />
     </div>
   );
 }
