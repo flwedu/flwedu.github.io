@@ -17,4 +17,4 @@ Terceira versão do meu site pessoal. Agora utilizando [React.js](https://reactj
 - [x] dark-mode
 - [x] routing
 - [x] languages: pt-br / en
-- [ ] using localStorage to save preferences
+- [x] using localStorage to save preferences
