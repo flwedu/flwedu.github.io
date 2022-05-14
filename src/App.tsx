@@ -1,3 +1,4 @@
+//@ts-nocheck
 import "./tailwind.css";
 import "./styles.css";
 import { DarkModeButton } from "./components/DarkModeButton";
