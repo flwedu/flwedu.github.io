@@ -7,7 +7,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -b master -d dist"
+    "deploy": "gh-pages -b live -d dist"
   },
   "repository": {
     "type": "git",
