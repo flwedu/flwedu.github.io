@@ -59,6 +59,14 @@
       "githubLink": "https://github.com/flwedu/memory-card-game"
     },
     {
+      "title": "punk-barbershop-backend",
+      "description": "A REST API that works with a MongoDB database. The main purpose was to apply some concepts learned during the studies of DDD, TDD, Clean Architecture and Node.js",
+      "tags": ["Node.js", "Typescript", "Back-end"],
+      "imgUrl": "https://i.imgur.com/NuSpTh6.png",
+      "applicationLink": null,
+      "githubLink": "https://github.com/flwedu/punk-barbershop-backend"
+    },
+    {
       "title": "desafio_calculadora",
       "description": "A calculator prototype created during a college challenge. Using TDD, HTML, CSS and Typescript.",
       "imgUrl": "https://i.imgur.com/lgQg6eF.png",
