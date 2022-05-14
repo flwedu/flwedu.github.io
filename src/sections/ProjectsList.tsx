@@ -1,28 +1,25 @@
-import { useEffect, useState } from "react";
-import { Project, ProjectCard } from "../components/ProjectCard";
-import { ProjectsListService } from "../service/projects-list-service";
+import { useContext, useEffect, useState } from "react";
+import projectsListJson from "../../static/res/projects.json";
+import { TextContext, TextContextType } from "../App";
+import { ProjectCard } from "../components/ProjectCard";
 
 export function ProjectsList() {
-  const service = new ProjectsListService();
+  const { text } = useContext(TextContext) as TextContextType;
+  const projects = text.sections.projects;
 
-  const [projectsList, setProjectsList] = useState<Project[]>([]);
+  const [projectsList, setProjectsList] = useState<
+    typeof projectsListJson["pt-br"]
+  >(projectsListJson["pt-br"]);
   useEffect(() => {
-    const loadProjects = async () => {
-      const list = await service.getList();
-      setProjectsList(list);
-    };
-
-    loadProjects();
-  }, []);
+    if (text.language == "en") return setProjectsList(projectsListJson.en);
+    return setProjectsList(projectsListJson["pt-br"]);
+  }, [text]);
 
   return (
     <section id="projects" className="">
-      <h1>Projetos desenvolvidos</h1>
+      <h1>{projects.h1}</h1>
 
-      <p>
-        Esses são alguns projetos que achei bastante desafiadores e pude aplicar
-        o que estava estudando durante o período do desenvolvimento.
-      </p>
+      <p>{projects.p}</p>
       <div className="grid grid-cols-1 md:grid-cols-2 content-center">
         {projectsList.map((el) => (
           <ProjectCard project={el} key={el.title} />

@@ -1,22 +1,31 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { TextContext, TextContextType } from "../App";
 
 export function NavHeader() {
+  const { text, toggleFn } = useContext(TextContext) as TextContextType;
+
+  function handleClick() {
+    toggleFn();
+  }
+
   return (
     <nav className="sticky container flex flex-row mx-auto justify-center content-center top-0 max-w-3xl h-12 bg-white border-gray-200 dark:bg-gray-800 rounded shadow-md">
       <ul className="flex flex-row justify-center items-center gap-5">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">{text.navbar.home}</Link>
         </li>
         <li>
-          <Link to="/technologies">Tecnologias</Link>
+          <Link to="/technologies">{text.navbar.technologies}</Link>
         </li>
         <li>
-          <Link to="/projects">Projetos</Link>
+          <Link to="/projects">{text.navbar.projects}</Link>
         </li>
         <li>
-          <Link to="/links">Links</Link>
+          <Link to="/links">{text.navbar.links}</Link>
         </li>
       </ul>
+      <button onClick={handleClick}>Change Language</button>
     </nav>
   );
 }
