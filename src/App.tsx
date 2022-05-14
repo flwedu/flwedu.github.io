@@ -1,15 +1,15 @@
 //@ts-nocheck
-import "./tailwind.css";
-import "./styles.css";
-import { DarkModeButton } from "./components/DarkModeButton";
-import { AboutMe } from "./sections/AboutMe";
-import { NavHeader } from "./layout/NavHeader";
-import { Technologies } from "./sections/Technologies";
-import { ProjectsList } from "./sections/ProjectsList";
-import { Links } from "./sections/Links";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { createContext, useState } from "react";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import texts from "../static/res/texts.json";
+import { DarkModeButton } from "./components/DarkModeButton";
+import { NavHeader } from "./layout/NavHeader";
+import { AboutMe } from "./sections/AboutMe";
+import { Links } from "./sections/Links";
+import { ProjectsList } from "./sections/ProjectsList";
+import { Technologies } from "./sections/Technologies";
+import "./styles.css";
+import "./tailwind.css";
 
 const TEXT_EN = texts.en;
 const TEXT_PTBR = texts["pt-br"];
@@ -36,7 +36,7 @@ function App() {
   return (
     <div className="App">
       <main>
-        <BrowserRouter>
+        <HashRouter>
           <TextContext.Provider
             value={{ text, toggleFn: toggleLanguage, otherLanguage }}
           >
@@ -48,7 +48,7 @@ function App() {
               <Route path="links" element={<Links />} />
             </Routes>
           </TextContext.Provider>
-        </BrowserRouter>
+        </HashRouter>
       </main>
       <DarkModeButton />
     </div>
