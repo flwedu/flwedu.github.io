@@ -15,14 +15,17 @@ const TEXT_PTBR = texts["pt-br"];
 
 export type TextContextType = {
   text: typeof TEXT_EN;
+  otherLanguage: string;
   toggleFn: () => void;
 };
 var TextContext = createContext<TextContextType | null>(null);
 
 function App() {
   const [text, setText] = useState(TEXT_PTBR);
+  const [otherLanguage, setOtherLanguage] = useState("en");
 
   const toggleLanguage = () => {
+    setOtherLanguage(text.language);
     if (text.language == "pt-br") {
       return setText(TEXT_EN);
     }
@@ -33,7 +36,9 @@ function App() {
     <div className="App">
       <main>
         <BrowserRouter>
-          <TextContext.Provider value={{ text, toggleFn: toggleLanguage }}>
+          <TextContext.Provider
+            value={{ text, toggleFn: toggleLanguage, otherLanguage }}
+          >
             <NavHeader />
             <Routes>
               <Route path="/" element={<AboutMe />} />
