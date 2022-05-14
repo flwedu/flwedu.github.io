@@ -16,7 +16,7 @@ const TEXT_PTBR = texts["pt-br"];
 
 export type TextContextType = {
   text: typeof TEXT_EN;
-  otherLanguage: string;
+  otherLanguage: "pt-br" | "en";
   toggleFn: () => void;
 };
 var TextContext = createContext<TextContextType | null>(null);
