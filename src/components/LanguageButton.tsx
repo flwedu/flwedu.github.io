@@ -8,8 +8,13 @@ export default function LanguageButton() {
   }
 
   return (
-    <button onClick={handleClick}>
-      {otherLanguage == "en" ? "🇺🇸" : "🇧🇷"} {otherLanguage.toUpperCase()}
-    </button>
+    <div
+      className="fixed bottom-[6rem] right-4 rounded-full h-[4rem] w-[4rem] bg-slate-900 dark:bg-slate-100 flex justify-center items-center"
+      onClick={handleClick}
+    >
+      <span className="text-5xl text-center items-center">
+        {otherLanguage == "en" ? "🇺🇸" : "🇧🇷"}
+      </span>
+    </div>
   );
 }

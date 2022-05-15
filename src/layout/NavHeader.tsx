@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import LanguageButton from "../components/LanguageButton";
 import useTextContext from "../contexts/consumers/text-context-consumer";
 
 export function NavHeader() {
@@ -19,9 +18,6 @@ export function NavHeader() {
         </li>
         <li>
           <Link to="/links">{text.navbar.links}</Link>
-        </li>
-        <li>
-          <LanguageButton />
         </li>
       </ul>
     </nav>

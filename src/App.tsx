@@ -1,6 +1,7 @@
 //@ts-nocheck
 import { HashRouter, Route, Routes } from "react-router-dom";
 import DarkModeButton from "./components/DarkModeButton";
+import LanguageButton from "./components/LanguageButton";
 import { DarkModeContextProvider } from "./contexts/providers/darkmode-provider";
 import { TextContextProvider } from "./contexts/providers/text-context-provider";
 import { NavHeader } from "./layout/NavHeader";
@@ -29,6 +30,7 @@ function App() {
             </Routes>
           </HashRouter>
         </main>
+        <LanguageButton />
         <DarkModeContextProvider storageService={storageService}>
           <DarkModeButton />
         </DarkModeContextProvider>
