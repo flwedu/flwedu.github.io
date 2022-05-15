@@ -42,16 +42,15 @@ const TextContextProvider = (props: {
   children: JSX.Element;
   storageService: StorageService;
 }) => {
-  const initialSettings = props.storageService.load();
-  const [text, setText] = useState(textsSource[initialSettings.language]);
+  const initialLanguage = props.storageService.loadItem("language");
+  const [text, setText] = useState(textsSource[initialLanguage]);
   const [otherLanguage, setOtherLanguage] = useState(
-    oppositeLanguage(initialSettings.language)
+    oppositeLanguage(initialLanguage)
   );
 
   // saving new preferences when text is changed
   useEffect(() => {
-    const settings = props.storageService.load();
-    props.storageService.save({ ...settings, language: text.language });
+    props.storageService.saveItem("language", text.language);
   }, [text]);
 
   // Toggle language selection, useEffect function above this is triggered
