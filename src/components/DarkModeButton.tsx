@@ -6,7 +6,7 @@ export default function DarkModeButton() {
 
   return (
     <div
-      className="sticky bottom-2 left-2 self-end rounded-full h-[4rem] w-[4rem] bg-slate-900 dark:bg-slate-100"
+      className="fixed bottom-[1.5rem] right-4 rounded-full h-[4rem] w-[4rem] bg-slate-900 dark:bg-slate-100"
       onClick={toggleFn}
     >
       <Alien size="4rem" className="text-slate-100 dark:text-slate-900" />
