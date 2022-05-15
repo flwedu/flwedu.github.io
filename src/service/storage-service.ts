@@ -25,7 +25,7 @@ export class StorageService {
     return this.load()[name];
   }
 
-  saveItem(name: keyof Settings, value: boolean | string) {
+  saveItem(name: keyof Settings, value: typeof name) {
     let settings = this.load();
     settings = { ...settings, [name]: value };
     this.save(settings);
