@@ -29,7 +29,7 @@ type TextSource = {
 
 type TextContextType = {
   text: TextSource;
-  otherLanguage: "en" | "pt-br";
+  language: "en" | "pt-br";
   toggleFn: () => void;
 };
 
@@ -43,19 +43,17 @@ const TextContextProvider = (props: {
   storageService: StorageService;
 }) => {
   const initialLanguage = props.storageService.loadItem("language");
+  const [language, setLanguage] = useState(initialLanguage);
   const [text, setText] = useState(textsSource[initialLanguage]);
-  const [otherLanguage, setOtherLanguage] = useState(
-    oppositeLanguage(initialLanguage)
-  );
 
   // saving new preferences when text is changed
   useEffect(() => {
     props.storageService.saveItem("language", text.language);
+    setLanguage(text.language);
   }, [text]);
 
   // Toggle language selection, useEffect function above this is triggered
   const toggleFn = () => {
-    setOtherLanguage(text.language);
     if (text.language == "pt-br") {
       return setText(TEXT_EN);
     }
@@ -63,15 +61,10 @@ const TextContextProvider = (props: {
   };
 
   return (
-    <TextContext.Provider value={{ text, toggleFn, otherLanguage }}>
+    <TextContext.Provider value={{ text, toggleFn, language }}>
       {props.children}
     </TextContext.Provider>
   );
 };
-
-function oppositeLanguage(language: "en" | "pt-br") {
-  if (language === "en") return "pt-br";
-  return "en";
-}
 
 export { TextContext, TextContextProvider };
