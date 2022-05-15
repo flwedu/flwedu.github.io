@@ -27,8 +27,7 @@
     @apply text-slate-500 dark:text-slate-400;
   }
 
-  a,
-  button {
+  a {
     @apply text-slate-900 dark:text-white font-semibold;
   }
 }
