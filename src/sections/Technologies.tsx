@@ -1,8 +1,7 @@
-import { useContext } from "react";
-import { TextContext, TextContextType } from "../App";
+import useTextContext from "../contexts/consumers/text-context-consumer";
 
 export function Technologies() {
-  const { text } = useContext(TextContext) as TextContextType;
+  const { text } = useTextContext();
   const technologies = text.sections.technologies;
 
   return (

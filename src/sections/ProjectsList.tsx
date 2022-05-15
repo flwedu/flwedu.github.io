@@ -1,10 +1,11 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import projectsListJson from "../../static/res/projects.json";
-import { TextContext, TextContextType } from "../App";
+
 import { ProjectCard } from "../components/ProjectCard";
+import useTextContext from "../contexts/consumers/text-context-consumer";
 
 export function ProjectsList() {
-  const { text } = useContext(TextContext) as TextContextType;
+  const { text } = useTextContext();
   const projects = text.sections.projects;
 
   const [projectsList, setProjectsList] = useState<

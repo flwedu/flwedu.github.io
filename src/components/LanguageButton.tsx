@@ -1,10 +1,8 @@
-import { useContext } from "react";
-import { TextContext, TextContextType } from "../App";
+import useTextContext from "../contexts/consumers/text-context-consumer";
 
 export default function LanguageButton() {
-  const { toggleFn, otherLanguage } = useContext(
-    TextContext
-  ) as TextContextType;
+  const { toggleFn, otherLanguage } = useTextContext();
+
   function handleClick() {
     toggleFn();
   }

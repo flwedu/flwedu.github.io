@@ -1,8 +1,8 @@
 //@ts-nocheck
-import { createContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import texts from "../static/res/texts.json";
 import { DarkModeButton } from "./components/DarkModeButton";
+import { TextContextProvider } from "./contexts/providers/text-context-provider";
 import { NavHeader } from "./layout/NavHeader";
 import { AboutMe } from "./sections/AboutMe";
 import { Links } from "./sections/Links";
@@ -12,44 +12,16 @@ import { StorageService } from "./service/storage-service";
 import "./styles.css";
 import "./tailwind.css";
 
-const TEXT_EN = texts.en;
-const TEXT_PTBR = texts["pt-br"];
-
-export type TextContextType = {
-  text: typeof TEXT_EN;
-  otherLanguage: "pt-br" | "en";
-  toggleFn: () => void;
-};
-var TextContext = createContext<TextContextType | null>(null);
-
 function App() {
   const storageService = new StorageService();
   const settings = storageService.load();
 
-  const [text, setText] = useState(texts[settings.language]);
   const [darkmode, setDarkmode] = useState(settings.darkmode);
-  const [otherLanguage, setOtherLanguage] = useState(settings.language);
 
   // Initializing
   useEffect(() => {
     if (darkmode) document.documentElement.classList.add("dark");
-    if (settings.language == "en") return setOtherLanguage("pt-br");
-    return setOtherLanguage("en");
   });
-
-  // Saving new settings on storage
-  useEffect(() => {
-    storageService.save({ darkmode, language: text.language });
-  }, [text, darkmode]);
-
-  // Toggle language selection, useEffect function above this is triggered
-  const toggleLanguage = () => {
-    setOtherLanguage(text.language);
-    if (text.language == "pt-br") {
-      return setText(TEXT_EN);
-    }
-    return setText(TEXT_PTBR);
-  };
 
   const toggleDarkMode = () => {
     document.documentElement.classList.toggle("dark");
@@ -58,11 +30,9 @@ function App() {
 
   return (
     <div className="App">
-      <main>
-        <HashRouter>
-          <TextContext.Provider
-            value={{ text, toggleFn: toggleLanguage, otherLanguage }}
-          >
+      <TextContextProvider storageService={storageService}>
+        <main>
+          <HashRouter>
             <NavHeader />
             <Routes>
               <Route path="/" element={<AboutMe />} />
@@ -70,12 +40,12 @@ function App() {
               <Route path="projects" element={<ProjectsList />} />
               <Route path="links" element={<Links />} />
             </Routes>
-          </TextContext.Provider>
-        </HashRouter>
-      </main>
-      <DarkModeButton toggleDarkMode={toggleDarkMode} />
+          </HashRouter>
+        </main>
+        <DarkModeButton toggleDarkMode={toggleDarkMode} />
+      </TextContextProvider>
     </div>
   );
 }
 
-export { App, TextContext };
+export { App };
