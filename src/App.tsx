@@ -1,7 +1,7 @@
 //@ts-nocheck
-import { useEffect, useState } from "react";
 import { HashRouter, Route, Routes } from "react-router-dom";
-import { DarkModeButton } from "./components/DarkModeButton";
+import DarkModeButton from "./components/DarkModeButton";
+import { DarkModeContextProvider } from "./contexts/providers/darkmode-provider";
 import { TextContextProvider } from "./contexts/providers/text-context-provider";
 import { NavHeader } from "./layout/NavHeader";
 import { AboutMe } from "./sections/AboutMe";
@@ -14,19 +14,6 @@ import "./tailwind.css";
 
 function App() {
   const storageService = new StorageService();
-  const settings = storageService.load();
-
-  const [darkmode, setDarkmode] = useState(settings.darkmode);
-
-  // Initializing
-  useEffect(() => {
-    if (darkmode) document.documentElement.classList.add("dark");
-  });
-
-  const toggleDarkMode = () => {
-    document.documentElement.classList.toggle("dark");
-    setDarkmode(document.documentElement.classList.contains("dark"));
-  };
 
   return (
     <div className="App">
@@ -42,7 +29,9 @@ function App() {
             </Routes>
           </HashRouter>
         </main>
-        <DarkModeButton toggleDarkMode={toggleDarkMode} />
+        <DarkModeContextProvider storageService={storageService}>
+          <DarkModeButton />
+        </DarkModeContextProvider>
       </TextContextProvider>
     </div>
   );
