@@ -5,7 +5,7 @@ import { StorageService } from "../service/storage-service";
 import { NavHeader } from "./NavHeader";
 
 describe("NavHeader component test", () => {
-  test("Should render the component", () => {
+  test("Rendered component should match the snapshot", () => {
     const storageService = new StorageService();
     const { container } = render(
       <TextContextProvider storageService={storageService}>
