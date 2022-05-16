@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NavHeader component test Should render the component 1`] = `
+exports[`NavHeader component test Rendered component should match the snapshot 1`] = `
 <nav
   class="sticky container flex flex-row mx-auto justify-center content-center top-0 max-w-3xl h-12 bg-white border-gray-200 dark:bg-gray-800 rounded shadow-md"
 >
