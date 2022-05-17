@@ -14,9 +14,9 @@ describe("Language Button component tests", () => {
       </TextContext.Provider>
     );
 
-    const buttonDiv = container.querySelector("div .fixed");
+    const button = container.querySelector("button");
 
-    expect(buttonDiv).toBeTruthy();
+    expect(button).toBeTruthy();
   });
 
   test("Button should trigger toggleFn function on click", () => {
@@ -29,13 +29,13 @@ describe("Language Button component tests", () => {
       </TextContext.Provider>
     );
 
-    const div = container.querySelector("div");
+    const button = container.querySelector("button");
     const span = container.querySelector("span");
 
     // Start with 🇺🇸
     expect(span.textContent).toEqual("🇺🇸");
 
-    fireEvent.click(div);
+    fireEvent.click(button);
     expect(toggleFn).toHaveBeenCalledTimes(1);
   });
 });
