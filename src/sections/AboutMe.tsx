@@ -1,9 +1,8 @@
-import { useContext } from "react";
-import { TextContext, TextContextType } from "../App";
 import { ProfilePic } from "../components/ProfilePic";
+import useTextContext from "../contexts/consumers/text-context-consumer";
 
 export function AboutMe() {
-  const { text } = useContext(TextContext) as TextContextType;
+  const { text } = useTextContext();
   const about = text.sections.about;
 
   return (

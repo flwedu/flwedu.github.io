@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="350"
+   height="350"
+   viewBox="0 0 2100 2100"
+   version="1.1"
+   id="svg382"
+   sodipodi:docname="us.svg"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs386" />
+  <sodipodi:namedview
+     id="namedview384"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.2048583"
+     inkscape:cx="311.23992"
+     inkscape:cy="265.17641"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg382" />
+  <rect
+     width="3993.8308"
+     height="2116.4314"
+     fill="#b22234"
+     id="rect351"
+     x="-776.8548"
+     y="-4.9798384"
+     style="stroke-width:0.540823" />
+  <path
+     d="M -776.85484,239.22379 H 3216.9758 m 0,325.60484 H -776.85484 m 0,325.60483 H 3216.9758 m 0,325.60484 H -776.85484 m 0,325.6049 H 3216.9758 m 0,325.6048 H -776.85484"
+     stroke="#ffffff"
+     stroke-width="162.247"
+     id="path353" />
+  <rect
+     width="1597.5323"
+     height="1139.6169"
+     fill="#3c3b6e"
+     id="rect355"
+     x="-776.8548"
+     y="-4.9798384"
+     style="stroke-width:0.540823" />
+  <g
+     fill="#ffffff"
+     id="g380"
+     transform="matrix(0.53897849,0,0,0.54267473,-776.85484,-4.9798385)">
+    <g
+       id="s18">
+      <g
+         id="s9">
+        <g
+           id="s5">
+          <g
+             id="s4">
+            <path
+               id="s"
+               d="M 247,90 317.53423,307.08204 132.87322,172.91796 H 361.12678 L 176.46577,307.08204 Z" />
+            <use
+               xlink:href="#s"
+               y="420"
+               id="use358" />
+            <use
+               xlink:href="#s"
+               y="840"
+               id="use360" />
+            <use
+               xlink:href="#s"
+               y="1260"
+               id="use362" />
+          </g>
+          <use
+             xlink:href="#s"
+             y="1680"
+             id="use365" />
+        </g>
+        <use
+           xlink:href="#s4"
+           x="247"
+           y="210"
+           id="use368" />
+      </g>
+      <use
+         xlink:href="#s9"
+         x="494"
+         id="use371" />
+    </g>
+    <use
+       xlink:href="#s18"
+       x="988"
+       id="use374" />
+    <use
+       xlink:href="#s9"
+       x="1976"
+       id="use376" />
+    <use
+       xlink:href="#s5"
+       x="2470"
+       id="use378" />
+  </g>
+</svg>

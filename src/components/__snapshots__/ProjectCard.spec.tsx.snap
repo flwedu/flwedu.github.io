@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project Card component tests Rendered component should match the snapshot 1`] = `
+<div
+  class="card flex flex-col gap-2 max-w-sm p-2 my-2 rounded-lg shadow-lg space-x-4 items-center place-content-between"
+>
+  <div
+    class="card-header flex justify-center"
+  >
+    <img
+      alt="Imagem do projeto"
+      class="w-40 rounded-sm"
+      src=""
+    />
+  </div>
+  <div
+    class="card-body"
+  >
+    <h3>
+      Test App
+    </h3>
+    <p>
+      Just a test app
+    </p>
+  </div>
+  <div
+    class="card-footer flex items-center gap-2"
+  />
+</div>
+`;

@@ -20,4 +20,14 @@ export class StorageService {
     const settings: Settings = { darkmode: false, language: "pt-br" };
     return settings;
   }
+
+  loadItem(name: keyof Settings) {
+    return this.load()[name];
+  }
+
+  saveItem(name: keyof Settings, value: typeof name) {
+    let settings = this.load();
+    settings = { ...settings, [name]: value };
+    this.save(settings);
+  }
 }

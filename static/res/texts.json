@@ -1,6 +1,12 @@
 {
   "en": {
     "language": "en",
+    "emoji": "🇺🇸",
+    "buttons": {
+      "toDarkMode": "Switch to dark mode",
+      "toLightMode": "Switch to light mode",
+      "language": "Switch language"
+    },
     "navbar": {
       "home": "Home",
       "technologies": "Technologies",
@@ -24,6 +30,12 @@
   },
   "pt-br": {
     "language": "pt-br",
+    "emoji": "🇧🇷",
+    "buttons": {
+      "toDarkMode": "Trocar para modo escuro",
+      "toLightMode": "Trocar para modo claro",
+      "language": "Trocar idioma"
+    },
     "navbar": {
       "home": "Home",
       "technologies": "Tecnologias",

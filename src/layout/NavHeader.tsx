@@ -1,10 +1,8 @@
-import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { TextContext, TextContextType } from "../App";
-import LanguageButton from "../components/LanguageButton";
+import useTextContext from "../contexts/consumers/text-context-consumer";
 
 export function NavHeader() {
-  const { text } = useContext(TextContext) as TextContextType;
+  const { text } = useTextContext();
 
   return (
     <nav className="sticky container flex flex-row mx-auto justify-center content-center top-0 max-w-3xl h-12 bg-white border-gray-200 dark:bg-gray-800 rounded shadow-md">
@@ -20,9 +18,6 @@ export function NavHeader() {
         </li>
         <li>
           <Link to="/links">{text.navbar.links}</Link>
-        </li>
-        <li>
-          <LanguageButton />
         </li>
       </ul>
     </nav>
