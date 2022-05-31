@@ -5,6 +5,7 @@
       "description": "Uma aplicação de lista de afazeres (acredito que todo estudante de React já fez alguma dessas 😆).",
       "tags": ["React.js", "Typescript"],
       "imgUrl": "https://i.imgur.com/dpyJOJb.png",
+      "applicationLink": null,
       "githubLink": "https://github.com/flwedu/to-do-list-react"
     },
     {
@@ -12,6 +13,7 @@
       "description": "Projeto de um catálogo de filmes criado durante o desafio #7DaysOfCodeJavascript da Alura, utilizando Javascript Vanilla, HTML e CSS.",
       "tags": ["HTML", "CSS", "Javascript"],
       "imgUrl": "https://i.imgur.com/s9iWoDA.png",
+      "applicationLink": null,
       "githubLink": "https://github.com/flwedu/desafio7daysofcode-javascript"
     },
     {
@@ -53,6 +55,7 @@
       "description": "A task list application (I believe that every react student has already done any of these 😆).",
       "tags": ["React.js", "Typescript"],
       "imgUrl": "https://i.imgur.com/dpyJOJb.png",
+      "applicationLink": null,
       "githubLink": "https://github.com/flwedu/to-do-list-react"
     },
     {
@@ -60,6 +63,7 @@
       "description": "A movie catalog application created during Alura's #7DaySofcodejavascript Challenge using JavaScript Vanilla, HTML and CSS.",
       "tags": ["HTML", "CSS", "Javascript"],
       "imgUrl": "https://i.imgur.com/s9iWoDA.png",
+      "applicationLink": null,
       "githubLink": "https://github.com/flwedu/desafio7daysofcode-javascript"
     },
     {
