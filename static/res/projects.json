@@ -1,6 +1,20 @@
 {
   "pt-br": [
     {
+      "title": "to-do-list-react",
+      "description": "Uma aplicação de lista de afazeres (acredito que todo estudante de React já fez alguma dessas 😆).",
+      "tags": ["React.js", "Typescript"],
+      "imgUrl": "https://i.imgur.com/dpyJOJb.png",
+      "githubLink": "https://github.com/flwedu/to-do-list-react"
+    },
+    {
+      "title": "Desafio 7 Days Of Code Alura - Javascript",
+      "description": "Projeto de um catálogo de filmes criado durante o desafio #7DaysOfCodeJavascript da Alura, utilizando Javascript Vanilla, HTML e CSS.",
+      "tags": ["HTML", "CSS", "Javascript"],
+      "imgUrl": "https://i.imgur.com/s9iWoDA.png",
+      "githubLink": "https://github.com/flwedu/desafio7daysofcode-javascript"
+    },
+    {
       "title": "Pokédexjsc",
       "description": "Uma aplicação que mostra dados sobre pokémons (sim, como uma pokédex). Consome a PokeAPI. Primeira aplicação web que desenvolvi, utilizando webpack, typescript, HTML e SCSS",
       "tags": ["HTML", "CSS", "Javascript"],
@@ -31,17 +45,23 @@
       "imgUrl": "https://i.imgur.com/lgQg6eF.png",
       "applicationLink": "https://desafio-calculadora.netlify.app",
       "githubLink": "https://github.com/flwedu/desafio_calculadora"
-    },
-    {
-      "title": "saladereuniao-app",
-      "description": " Uma aplicação web para gerenciar salas de reuniões e eventos. O objetivo principal foi treinar conceitos de desenvolvimento web com o framework Vue.js",
-      "tags": ["Vue.js"],
-      "imgUrl": "https://i.imgur.com/bcv08KS.png",
-      "applicationLink": null,
-      "githubLink": "https://github.com/flwedu/saladereuniao-app"
     }
   ],
   "en": [
+    {
+      "title": "to-do-list-react",
+      "description": "A task list application (I believe that every react student has already done any of these 😆).",
+      "tags": ["React.js", "Typescript"],
+      "imgUrl": "https://i.imgur.com/dpyJOJb.png",
+      "githubLink": "https://github.com/flwedu/to-do-list-react"
+    },
+    {
+      "title": "Desafio 7 Days Of Code Alura - Javascript",
+      "description": "A movie catalog application created during Alura's #7DaySofcodejavascript Challenge using JavaScript Vanilla, HTML and CSS.",
+      "tags": ["HTML", "CSS", "Javascript"],
+      "imgUrl": "https://i.imgur.com/s9iWoDA.png",
+      "githubLink": "https://github.com/flwedu/desafio7daysofcode-javascript"
+    },
     {
       "title": "Pokédexjsc",
       "description": "A simple web application that displays data about a searched Pokémon (yes, like a Pokédex). To work, it consumes data from the PokeAPI.",
@@ -73,14 +93,6 @@
       "applicationLink": "https://desafio-calculadora.netlify.app",
       "tags": ["HTML", "CSS", "Javascript"],
       "githubLink": "https://github.com/flwedu/desafio_calculadora"
-    },
-    {
-      "title": "saladereuniao-app",
-      "description": "A front-end application created with Vue.js that manages meeting rooms and events. Created during my front-end studies",
-      "imgUrl": "https://i.imgur.com/bcv08KS.png",
-      "tags": ["Vue.js"],
-      "applicationLink": null,
-      "githubLink": "https://github.com/flwedu/saladereuniao-app"
     }
   ]
 }
