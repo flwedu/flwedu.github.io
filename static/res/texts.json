@@ -16,7 +16,7 @@
     "sections": {
       "about": {
         "h1": "About me",
-        "p": "Hello, my name is Eduardo. I am a software developer, graduated in systems analysis and development and postgraduate in Full-Stack web development. Fan of technology, video games and Cyberpunk aesthetics."
+        "p": "Hello, my name is Eduardo. I am a software developer, graduated in Systems Analysis and Development and post-graduated in Full-Stack Web Development. Fan of technology, videogames and cyberpunk aesthetics."
       },
       "technologies": {
         "h1": "Technologies of interest",
@@ -45,7 +45,7 @@
     "sections": {
       "about": {
         "h1": "Quem sou eu?",
-        "p": "Olá, meu nome é Eduardo. Sou desenvolvedor de softwares, formado em           Análise e Desenvolvimento de Sistemas e pós-graduando em Desenvolvimento Web Full-Stack. Fã de tecnologia, videogames e estética cyberpunk."
+        "p": "Olá, meu nome é Eduardo. Sou desenvolvedor de softwares, formado em           Análise e Desenvolvimento de Sistemas e pós-graduado em Desenvolvimento Web Full-Stack. Fã de tecnologia, videogames e estética cyberpunk."
       },
       "technologies": {
         "h1": "Tecnologias de interesse",
