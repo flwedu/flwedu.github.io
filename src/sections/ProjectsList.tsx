@@ -9,7 +9,7 @@ export function ProjectsList() {
   const projects = text.sections.projects;
 
   const [projectsList, setProjectsList] = useState<
-    typeof projectsListJson["pt-br"]
+    (typeof projectsListJson)["pt-br"]
   >(projectsListJson["pt-br"]);
   useEffect(() => {
     if (text.language == "en") return setProjectsList(projectsListJson.en);

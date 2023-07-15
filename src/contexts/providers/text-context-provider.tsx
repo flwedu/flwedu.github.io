@@ -5,12 +5,12 @@ import { StorageService } from "../../service/storage-service";
 
 type TextSource = {
   language: "en" | "pt-br";
-  emoji: "🇺🇸" | "🇧🇷",
-    buttons: {
-      toDarkMode: string,
-      toLightMode: string,
-      language: string
-    },
+  emoji: "🇺🇸" | "🇧🇷";
+  buttons: {
+    toDarkMode: string;
+    toLightMode: string;
+    language: string;
+  };
   navbar: {
     home: string;
     technologies: string;
