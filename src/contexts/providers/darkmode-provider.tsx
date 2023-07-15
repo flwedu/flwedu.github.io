@@ -1,5 +1,5 @@
 //@ts-nocheck
-import { createContext, useEffect, useState } from "react";
+import { ReactNode, createContext, useEffect, useState } from "react";
 import { StorageService } from "../../service/storage-service";
 
 type DarkModeContextType = {
@@ -10,7 +10,7 @@ type DarkModeContextType = {
 const DarkModeContext = createContext<DarkModeContextType | null>(null);
 
 const DarkModeContextProvider = (props: {
-  children: JSX.Element;
+  children: ReactNode;
   storageService: StorageService;
 }) => {
   const initialDarkMode = props.storageService.loadItem("darkmode") as boolean;

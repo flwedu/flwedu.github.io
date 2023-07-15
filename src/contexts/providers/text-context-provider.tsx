@@ -1,5 +1,5 @@
 //@ts-nocheck
-import { createContext, useEffect, useState } from "react";
+import { ReactNode, createContext, useEffect, useState } from "react";
 import textsSource from "../../../static/res/texts.json";
 import { StorageService } from "../../service/storage-service";
 
@@ -45,7 +45,7 @@ const TEXT_PTBR = textsSource["pt-br"];
 const TextContext = createContext<TextContextType | null>(null);
 
 const TextContextProvider = (props: {
-  children: JSX.Element;
+  children: ReactNode;
   storageService: StorageService;
 }) => {
   const initialLanguage = props.storageService.loadItem("language");

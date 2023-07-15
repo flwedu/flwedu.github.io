@@ -1,4 +1,3 @@
-//@ts-nocheck
 import { HashRouter, Route, Routes } from "react-router-dom";
 import DarkModeButton from "./components/DarkModeButton";
 import LanguageButton from "./components/LanguageButton";
