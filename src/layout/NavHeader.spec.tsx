@@ -1,22 +1,16 @@
-import { render } from "@testing-library/react";
 import { HashRouter } from "react-router-dom";
-import { TextContextProvider } from "../contexts/providers/text-context-provider";
-import { StorageService } from "../service/storage-service";
+import { describe, expect, it } from 'vitest'
+import { render } from '../utils/test-utils'
 import { NavHeader } from "./NavHeader";
 
 describe("NavHeader component test", () => {
-  test("Rendered component should match the snapshot", () => {
-    const storageService = new StorageService();
+  it("Should render a component that matches the snapshot", () => {
     const { container } = render(
-      <TextContextProvider storageService={storageService}>
         <HashRouter>
           <NavHeader />
         </HashRouter>
-      </TextContextProvider>
     );
 
     expect(container.firstChild).toMatchSnapshot();
   });
 });
-
-export {};

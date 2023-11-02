@@ -1,9 +1,8 @@
-//@ts-nocheck
+import * as localforage from 'localforage'
 import { ReactNode, createContext, useEffect, useState } from "react";
-import { StorageService } from "../../service/storage-service";
 
 type DarkModeContextType = {
-  darkmode: boolean;
+	darkMode: boolean;
   toggleFn: () => void;
 };
 
@@ -11,27 +10,37 @@ const DarkModeContext = createContext<DarkModeContextType | null>(null);
 
 const DarkModeContextProvider = (props: {
   children: ReactNode;
-  storageService: StorageService;
 }) => {
-  const initialDarkMode = props.storageService.loadItem("darkmode") as boolean;
+  const [darkMode, setDarkMode] = useState<boolean>(false);
 
-  const [darkmode, setDarkMode] = useState<boolean>(initialDarkMode);
-
-  // Check if dark mode is enabled at initialization
-  if (darkmode) document.documentElement.classList.add("dark");
+	useEffect(() => {
+		localforage.getItem<boolean>("darkMode").then((value) => {
+			if (value == null) {
+				localforage.setItem("darkMode", false);
+			} else {
+				setDarkMode(value);
+			}
+		});
+	}, []);
 
   useEffect(() => {
-    props.storageService.saveItem("darkmode", darkmode);
-  }, [darkmode]);
+		localforage.setItem("darkMode", darkMode);
+
+		if (darkMode) {
+			document.documentElement.classList.add("dark");
+		} else {
+			document.documentElement.classList.remove("dark");
+		}
+
+  }, [darkMode]);
 
   // Function that is used to toggle dark mode
   const toggleFn = () => {
-    document.documentElement.classList.toggle("dark");
-    setDarkMode(document.documentElement.classList.contains("dark"));
+    setDarkMode((currDarkMode) => !currDarkMode);
   };
 
   return (
-    <DarkModeContext.Provider value={{ darkmode, toggleFn }}>
+    <DarkModeContext.Provider value={{ darkMode, toggleFn }}>
       {props.children}
     </DarkModeContext.Provider>
   );

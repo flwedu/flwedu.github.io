@@ -8,12 +8,10 @@ import { AboutMe } from './sections/AboutMe'
 import { Links } from './sections/Links'
 import { ProjectsList } from './sections/ProjectsList'
 import { Technologies } from './sections/Technologies'
-import { StorageService } from './service/storage-service'
 import './styles.css'
 import './tailwind.css'
 
 function App () {
-	const storageService = new StorageService()
 
 	return (
 		<div className="App">
@@ -29,7 +27,7 @@ function App () {
 				</HashRouter>
 			</main>
 			<LanguageButton/>
-			<DarkModeContextProvider storageService={storageService}>
+			<DarkModeContextProvider>
 				<DarkModeButton/>
 			</DarkModeContextProvider>
 		</div>

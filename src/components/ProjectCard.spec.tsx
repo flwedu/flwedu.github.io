@@ -1,8 +1,9 @@
-import { render } from "@testing-library/react";
+import { it, expect, describe } from 'vitest'
+import { render } from '../utils/test-utils'
 import { ProjectCard } from "./ProjectCard";
 
 describe("Project Card component tests", () => {
-  test("Rendered component should match the snapshot", () => {
+  it("Should render a component that matches the snapshot", () => {
     const project = {
       title: "Test App",
       description: "Just a test app",
@@ -17,5 +18,3 @@ describe("Project Card component tests", () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 });
-
-export {};

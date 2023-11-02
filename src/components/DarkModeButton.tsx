@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import useDarkModeContext from "../contexts/consumers/darkmode-consumer";
 
 export default function DarkModeButton() {
-  const { darkmode, toggleFn } = useDarkModeContext();
+  const { darkMode, toggleFn } = useDarkModeContext();
   const {t} = useTranslation();
 
   function getSpanText(mode: boolean) {
@@ -18,7 +18,7 @@ export default function DarkModeButton() {
       >
         <Alien className="text-slate-100 dark:text-slate-900 w-12 h-12" />
         <span className="text-slate-100 dark:text-slate-900 max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-in-out">
-          {getSpanText(darkmode)}
+          {getSpanText(darkMode)}
         </span>
       </button>
     </div>
