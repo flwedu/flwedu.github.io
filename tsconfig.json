@@ -1,21 +1,55 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "esModuleInterop": true,
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": false,
-    "skipLibCheck": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
-  },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+	"compilerOptions": {
+		"target": "ESNext",
+		"esModuleInterop": true,
+		"useDefineForClassFields": true,
+		"lib": [
+			"DOM",
+			"DOM.Iterable",
+			"ESNext"
+		],
+		"allowJs": false,
+		"skipLibCheck": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"jsx": "react-jsx",
+		"typeRoots": [
+			"src/types"
+		],
+		"baseUrl": "./",
+		"paths": {
+			"@/components": [
+				"src/components"
+			],
+			"@/hooks": [
+				"src/hooks"
+			],
+			"@/services": [
+				"src/services"
+			],
+			"@/types": [
+				"src/types"
+			],
+			"@/utils": [
+				"src/utils"
+			],
+			"@/layouts": [
+				"src/layouts"
+			]
+		}
+	},
+	"include": [
+		"src"
+	],
+	"references": [
+		{
+			"path": "./tsconfig.node.json"
+		}
+	]
 }

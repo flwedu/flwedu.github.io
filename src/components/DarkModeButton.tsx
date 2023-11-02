@@ -1,13 +1,13 @@
 import { Alien } from "phosphor-react";
+import { useTranslation } from 'react-i18next'
 import useDarkModeContext from "../contexts/consumers/darkmode-consumer";
-import useTextContext from "../contexts/consumers/text-context-consumer";
 
 export default function DarkModeButton() {
   const { darkmode, toggleFn } = useDarkModeContext();
-  const { text } = useTextContext();
+  const {t} = useTranslation();
 
-  function getSpanText(darkmode: boolean) {
-    return darkmode ? text.buttons.toLightMode : text.buttons.toDarkMode;
+  function getSpanText(mode: boolean) {
+    return mode ? t("buttons.toLightMode") : t("buttons.toDarkMode");
   }
 
   return (
