@@ -1,6 +1,5 @@
 import DarkModeButton from "@/components/DarkModeButton";
 import LanguageButton from "@/components/LanguageButton";
-import { DarkModeContextProvider } from "@/contexts/providers/darkmode-provider";
 import { NavHeader } from "@/layout/NavHeader";
 import { AboutMe } from "@/sections/AboutMe";
 import { Links } from "@/sections/Links";
@@ -26,9 +25,7 @@ function App() {
 				</HashRouter>
 			</main>
 			<LanguageButton />
-			<DarkModeContextProvider>
-				<DarkModeButton />
-			</DarkModeContextProvider>
+			<DarkModeButton />
 		</div>
 	);
 }
