@@ -1,0 +1,24 @@
+/* Estilos globais da aplicação */
+
+/* Reserva espaço para a scrollbar mesmo quando não está visível */
+html {
+  overflow-y: scroll;
+}
+
+/* Estiliza a scrollbar para ficar mais moderna e discreta */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

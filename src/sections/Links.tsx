@@ -1,34 +1,39 @@
+import { CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { GithubLogo, LinkedinLogo, TwitterLogo } from "phosphor-react";
 
 export function Links() {
 	return (
-		<section id="links" className="">
-			<h1> Links </h1>
-			<div className="my-8">
-				<a href="https://github.com/flwedu" target="_blank" rel="noreferrer">
-					<div className="flex w-24 items-center">
-						<GithubLogo /> GitHub
-					</div>
-				</a>
-				<a
-					href="https://twitter.com/emprestavel"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<div className="flex w-24 items-center">
-						<TwitterLogo /> Twitter
-					</div>
-				</a>
-				<a
-					href="https://www.linkedin.com/in/edu-aquino/"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<div className="flex w-24 items-center">
-						<LinkedinLogo /> Linkedin
-					</div>
-				</a>
-			</div>
-		</section>
+		<>
+			<CardHeader>
+				<CardTitle className="text-2xl text-center"> Links </CardTitle>
+			</CardHeader>
+			<CardContent>
+				<div className="my-8">
+					<a href="https://github.com/flwedu" target="_blank" rel="noreferrer">
+						<div className="flex items-center w-24">
+							<GithubLogo /> GitHub
+						</div>
+					</a>
+					<a
+						href="https://twitter.com/emprestavel"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<div className="flex items-center w-24">
+							<TwitterLogo /> Twitter
+						</div>
+					</a>
+					<a
+						href="https://www.linkedin.com/in/edu-aquino/"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<div className="flex items-center w-24">
+							<LinkedinLogo /> Linkedin
+						</div>
+					</a>
+				</div>
+			</CardContent>
+		</>
 	);
 }

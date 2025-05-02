@@ -12,8 +12,8 @@ const initialState: ConfigsStore = {
 };
 
 type ConfigsStoreActions = {
-	toggleDarkMode: () => void;
-	toggleLanguage: () => void;
+	toggleDarkMode: (theme: "dark" | "light") => void;
+	toggleLanguage: (language: "pt-BR" | "en-US") => void;
 };
 
 /**
@@ -25,13 +25,12 @@ export const useConfigsStore = create<ConfigsStore & ConfigsStoreActions>()(
 		(set, get) => {
 			return {
 				...initialState,
-				toggleDarkMode: () => {
-					return set((state) => ({ darkMode: !state.darkMode }));
+				toggleDarkMode: (theme: "dark" | "light") => {
+					return set(() => ({ darkMode: theme === "dark" }));
 				},
-				toggleLanguage: () =>
-					set((state) => ({
-						language: state.language === "pt-BR" ? "en-US" : "pt-BR",
-					})),
+				toggleLanguage: (language: "pt-BR" | "en-US") => {
+					return set(() => ({ language }));
+				},
 			};
 		},
 		{

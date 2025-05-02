@@ -4,7 +4,10 @@
 			"buttons": {
 				"toDarkMode": "Trocar para modo escuro",
 				"toLightMode": "Trocar para modo claro",
-				"language": "Trocar idioma"
+				"language": "Trocar idioma",
+				"darkMode": "Modo escuro",
+				"lightMode": "Modo claro",
+				"changeTheme": "Trocar tema"
 			},
 			"emoji": "🇧🇷",
 			"language": "Português (BR)",
@@ -35,7 +38,10 @@
 			"buttons": {
 				"toDarkMode": "Switch to dark mode",
 				"toLightMode": "Switch to light mode",
-				"language": "Switch language"
+				"language": "Switch language",
+				"darkMode": "Dark mode",
+				"lightMode": "Light mode",
+				"changeTheme": "Change theme"
 			},
 			"emoji": "🇺🇸",
 			"language": "English (US)",
