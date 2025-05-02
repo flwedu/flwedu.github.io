@@ -1,118 +1,118 @@
 {
-  "pt-br": [
-    {
-      "title": "weather-app",
-      "description": "Uma aplicação web para previsões do tempo",
-      "tags": ["Typescript", "CSS"],
-      "imgUrl": "https://user-images.githubusercontent.com/55285816/235553488-a8b75e6b-c877-47c2-8312-d0f094c39662.png",
-      "applicationLink": null,
-      "githubLink": "https://github.com/flwedu/weather-app"
-    },
-    {
-      "title": "to-do-list-react",
-      "description": "Uma aplicação de lista de afazeres (acredito que todo estudante de React já fez alguma dessas 😆).",
-      "tags": ["React.js", "Typescript"],
-      "imgUrl": "https://i.imgur.com/dpyJOJb.png",
-      "applicationLink": null,
-      "githubLink": "https://github.com/flwedu/to-do-list-react"
-    },
-    {
-      "title": "Desafio 7 Days Of Code Alura - Javascript",
-      "description": "Projeto de um catálogo de filmes criado durante o desafio #7DaysOfCodeJavascript da Alura, utilizando Javascript Vanilla, HTML e CSS.",
-      "tags": ["HTML", "CSS", "Javascript"],
-      "imgUrl": "https://i.imgur.com/s9iWoDA.png",
-      "applicationLink": null,
-      "githubLink": "https://github.com/flwedu/desafio7daysofcode-javascript"
-    },
-    {
-      "title": "Pokédexjsc",
-      "description": "Uma aplicação que mostra dados sobre pokémons (sim, como uma pokédex). Consome a PokeAPI. Primeira aplicação web que desenvolvi, utilizando webpack, typescript, HTML e SCSS",
-      "tags": ["HTML", "CSS", "Javascript"],
-      "imgUrl": "https://i.imgur.com/cSuU2ZB.png",
-      "applicationLink": "https://pokedexjsc.netlify.app/",
-      "githubLink": "https://github.com/flwedu/pokedex"
-    },
-    {
-      "title": "memory-card-game",
-      "description": "É um jogo de cartas, conhecido como jogo da memória. Para ganhar você deve virar duas cartas por vez, e encontrar os pares.",
-      "tags": ["HTML", "CSS", "Javascript"],
-      "imgUrl": "https://i.imgur.com/dnuIEeD.png",
-      "applicationLink": "https://card-memory-game-js.netlify.app/",
-      "githubLink": "https://github.com/flwedu/memory-card-game"
-    },
-    {
-      "title": "punk-barbershop-backend",
-      "description": "Uma API Rest que utiliza comunica com um banco de dados mongoDb. O intuito principal foi aplicar alguns conceitos aprendidos durante os estudos de DDD, TDD, Clean Architecture e Node.js",
-      "tags": ["Node.js", "Typescript", "Back-end"],
-      "imgUrl": "https://i.imgur.com/NuSpTh6.png",
-      "applicationLink": null,
-      "githubLink": "https://github.com/flwedu/punk-barbershop-backend"
-    },
-    {
-      "title": "desafio_calculadora",
-      "description": "Um projeto de calculadora criado durante um desafio da faculdade. Criada para exercitar conceitos de TDD.",
-      "tags": ["HTML", "CSS", "Javascript"],
-      "imgUrl": "https://i.imgur.com/lgQg6eF.png",
-      "applicationLink": "https://desafio-calculadora.netlify.app",
-      "githubLink": "https://github.com/flwedu/desafio_calculadora"
-    }
-  ],
-  "en": [
-    {
-      "title": "weather-app",
-      "description": "A web weather forecast application",
-      "tags": ["Typescript", "CSS"],
-      "imgUrl": "https://user-images.githubusercontent.com/55285816/235553488-a8b75e6b-c877-47c2-8312-d0f094c39662.png",
-      "applicationLink": null,
-      "githubLink": "https://github.com/flwedu/weather-app"
-    },
-    {
-      "title": "to-do-list-react",
-      "description": "A task list application (I believe that every react student has already done any of these 😆).",
-      "tags": ["React.js", "Typescript"],
-      "imgUrl": "https://i.imgur.com/dpyJOJb.png",
-      "applicationLink": null,
-      "githubLink": "https://github.com/flwedu/to-do-list-react"
-    },
-    {
-      "title": "Desafio 7 Days Of Code Alura - Javascript",
-      "description": "A movie catalog application created during Alura's #7DaySofcodejavascript Challenge using JavaScript Vanilla, HTML and CSS.",
-      "tags": ["HTML", "CSS", "Javascript"],
-      "imgUrl": "https://i.imgur.com/s9iWoDA.png",
-      "applicationLink": null,
-      "githubLink": "https://github.com/flwedu/desafio7daysofcode-javascript"
-    },
-    {
-      "title": "Pokédexjsc",
-      "description": "A simple web application that displays data about a searched Pokémon (yes, like a Pokédex). To work, it consumes data from the PokeAPI.",
-      "imgUrl": "https://i.imgur.com/cSuU2ZB.png",
-      "tags": ["HTML", "CSS", "Javascript"],
-      "applicationLink": "https://pokedexjsc.netlify.app/",
-      "githubLink": "https://github.com/flwedu/pokedex"
-    },
-    {
-      "title": "memory-card-game",
-      "description": "This is a card game. You can choose two cards at a time and try to find two cards that are exactly the same.",
-      "imgUrl": "https://i.imgur.com/dnuIEeD.png",
-      "tags": ["HTML", "CSS", "Javascript"],
-      "applicationLink": "https://card-memory-game-js.netlify.app/",
-      "githubLink": "https://github.com/flwedu/memory-card-game"
-    },
-    {
-      "title": "punk-barbershop-backend",
-      "description": "A REST API that works with a MongoDB database. The main purpose was to apply some concepts learned during the studies of DDD, TDD, Clean Architecture and Node.js",
-      "tags": ["Node.js", "Typescript", "Back-end"],
-      "imgUrl": "https://i.imgur.com/NuSpTh6.png",
-      "applicationLink": null,
-      "githubLink": "https://github.com/flwedu/punk-barbershop-backend"
-    },
-    {
-      "title": "desafio_calculadora",
-      "description": "A calculator prototype created during a college challenge. Using TDD, HTML, CSS and Typescript.",
-      "imgUrl": "https://i.imgur.com/lgQg6eF.png",
-      "applicationLink": "https://desafio-calculadora.netlify.app",
-      "tags": ["HTML", "CSS", "Javascript"],
-      "githubLink": "https://github.com/flwedu/desafio_calculadora"
-    }
-  ]
+	"pt-br": [
+		{
+			"title": "weather-app",
+			"description": "Uma aplicação web para previsões do tempo",
+			"tags": ["Typescript", "CSS"],
+			"imgUrl": "https://user-images.githubusercontent.com/55285816/235553488-a8b75e6b-c877-47c2-8312-d0f094c39662.png",
+			"applicationLink": null,
+			"githubLink": "https://github.com/flwedu/weather-app"
+		},
+		{
+			"title": "to-do-list-react",
+			"description": "Uma aplicação de lista de afazeres (acredito que todo estudante de React já fez alguma dessas 😆).",
+			"tags": ["React.js", "Typescript"],
+			"imgUrl": "https://i.imgur.com/dpyJOJb.png",
+			"applicationLink": null,
+			"githubLink": "https://github.com/flwedu/to-do-list-react"
+		},
+		{
+			"title": "Desafio 7 Days Of Code Alura - Javascript",
+			"description": "Projeto de um catálogo de filmes criado durante o desafio #7DaysOfCodeJavascript da Alura, utilizando Javascript Vanilla, HTML e CSS.",
+			"tags": ["HTML", "CSS", "Javascript"],
+			"imgUrl": "https://i.imgur.com/s9iWoDA.png",
+			"applicationLink": null,
+			"githubLink": "https://github.com/flwedu/desafio7daysofcode-javascript"
+		},
+		{
+			"title": "Pokédexjsc",
+			"description": "Uma aplicação que mostra dados sobre pokémons (sim, como uma pokédex). Consome a PokeAPI. Primeira aplicação web que desenvolvi, utilizando webpack, typescript, HTML e SCSS",
+			"tags": ["HTML", "CSS", "Javascript"],
+			"imgUrl": "https://i.imgur.com/cSuU2ZB.png",
+			"applicationLink": "https://pokedexjsc.netlify.app/",
+			"githubLink": "https://github.com/flwedu/pokedex"
+		},
+		{
+			"title": "memory-card-game",
+			"description": "É um jogo de cartas, conhecido como jogo da memória. Para ganhar você deve virar duas cartas por vez, e encontrar os pares.",
+			"tags": ["HTML", "CSS", "Javascript"],
+			"imgUrl": "https://i.imgur.com/dnuIEeD.png",
+			"applicationLink": "https://card-memory-game-js.netlify.app/",
+			"githubLink": "https://github.com/flwedu/memory-card-game"
+		},
+		{
+			"title": "punk-barbershop-backend",
+			"description": "Uma API Rest que utiliza comunica com um banco de dados mongoDb. O intuito principal foi aplicar alguns conceitos aprendidos durante os estudos de DDD, TDD, Clean Architecture e Node.js",
+			"tags": ["Node.js", "Typescript", "Back-end"],
+			"imgUrl": "https://i.imgur.com/NuSpTh6.png",
+			"applicationLink": null,
+			"githubLink": "https://github.com/flwedu/punk-barbershop-backend"
+		},
+		{
+			"title": "desafio_calculadora",
+			"description": "Um projeto de calculadora criado durante um desafio da faculdade. Criada para exercitar conceitos de TDD.",
+			"tags": ["HTML", "CSS", "Javascript"],
+			"imgUrl": "https://i.imgur.com/lgQg6eF.png",
+			"applicationLink": "https://desafio-calculadora.netlify.app",
+			"githubLink": "https://github.com/flwedu/desafio_calculadora"
+		}
+	],
+	"en": [
+		{
+			"title": "weather-app",
+			"description": "A web weather forecast application",
+			"tags": ["Typescript", "CSS"],
+			"imgUrl": "https://user-images.githubusercontent.com/55285816/235553488-a8b75e6b-c877-47c2-8312-d0f094c39662.png",
+			"applicationLink": null,
+			"githubLink": "https://github.com/flwedu/weather-app"
+		},
+		{
+			"title": "to-do-list-react",
+			"description": "A task list application (I believe that every react student has already done any of these 😆).",
+			"tags": ["React.js", "Typescript"],
+			"imgUrl": "https://i.imgur.com/dpyJOJb.png",
+			"applicationLink": null,
+			"githubLink": "https://github.com/flwedu/to-do-list-react"
+		},
+		{
+			"title": "Desafio 7 Days Of Code Alura - Javascript",
+			"description": "A movie catalog application created during Alura's #7DaySofcodejavascript Challenge using JavaScript Vanilla, HTML and CSS.",
+			"tags": ["HTML", "CSS", "Javascript"],
+			"imgUrl": "https://i.imgur.com/s9iWoDA.png",
+			"applicationLink": null,
+			"githubLink": "https://github.com/flwedu/desafio7daysofcode-javascript"
+		},
+		{
+			"title": "Pokédexjsc",
+			"description": "A simple web application that displays data about a searched Pokémon (yes, like a Pokédex). To work, it consumes data from the PokeAPI.",
+			"imgUrl": "https://i.imgur.com/cSuU2ZB.png",
+			"tags": ["HTML", "CSS", "Javascript"],
+			"applicationLink": "https://pokedexjsc.netlify.app/",
+			"githubLink": "https://github.com/flwedu/pokedex"
+		},
+		{
+			"title": "memory-card-game",
+			"description": "This is a card game. You can choose two cards at a time and try to find two cards that are exactly the same.",
+			"imgUrl": "https://i.imgur.com/dnuIEeD.png",
+			"tags": ["HTML", "CSS", "Javascript"],
+			"applicationLink": "https://card-memory-game-js.netlify.app/",
+			"githubLink": "https://github.com/flwedu/memory-card-game"
+		},
+		{
+			"title": "punk-barbershop-backend",
+			"description": "A REST API that works with a MongoDB database. The main purpose was to apply some concepts learned during the studies of DDD, TDD, Clean Architecture and Node.js",
+			"tags": ["Node.js", "Typescript", "Back-end"],
+			"imgUrl": "https://i.imgur.com/NuSpTh6.png",
+			"applicationLink": null,
+			"githubLink": "https://github.com/flwedu/punk-barbershop-backend"
+		},
+		{
+			"title": "desafio_calculadora",
+			"description": "A calculator prototype created during a college challenge. Using TDD, HTML, CSS and Typescript.",
+			"imgUrl": "https://i.imgur.com/lgQg6eF.png",
+			"applicationLink": "https://desafio-calculadora.netlify.app",
+			"tags": ["HTML", "CSS", "Javascript"],
+			"githubLink": "https://github.com/flwedu/desafio_calculadora"
+		}
+	]
 }

@@ -1,12 +1,12 @@
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from "react-i18next";
 
-export function Technologies () {
-	const { t } = useTranslation<'translations'>()
+export function Technologies() {
+	const { t } = useTranslation<"translations">();
 
 	return (
 		<section id="technologies" className="">
-			<h1>{t('sections.technologies.h1')}</h1>
-			<p>{t('sections.technologies.p')}</p>
+			<h1>{t("sections.technologies.h1")}</h1>
+			<p>{t("sections.technologies.p")}</p>
 			<div className="grid text-center mt-2 text-xl sm:grid-cols-2 text-mainPurple-500 dark:text-slate-300">
 				<ul>
 					<li>Javascript</li>
@@ -26,5 +26,5 @@ export function Technologies () {
 				</ul>
 			</div>
 		</section>
-	)
+	);
 }

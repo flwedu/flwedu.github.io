@@ -1,17 +1,17 @@
-import * as localforage from 'localforage'
-import { ReactNode, createContext, useEffect, useState } from "react";
+import * as localforage from "localforage";
+import { type ReactNode, createContext, useEffect, useState } from "react";
 
 type DarkModeContextType = {
 	darkMode: boolean;
-  toggleFn: () => void;
+	toggleFn: () => void;
 };
 
 const DarkModeContext = createContext<DarkModeContextType | null>(null);
 
 const DarkModeContextProvider = (props: {
-  children: ReactNode;
+	children: ReactNode;
 }) => {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
+	const [darkMode, setDarkMode] = useState<boolean>(false);
 
 	useEffect(() => {
 		localforage.getItem<boolean>("darkMode").then((value) => {
@@ -23,7 +23,7 @@ const DarkModeContextProvider = (props: {
 		});
 	}, []);
 
-  useEffect(() => {
+	useEffect(() => {
 		localforage.setItem("darkMode", darkMode);
 
 		if (darkMode) {
@@ -31,19 +31,18 @@ const DarkModeContextProvider = (props: {
 		} else {
 			document.documentElement.classList.remove("dark");
 		}
+	}, [darkMode]);
 
-  }, [darkMode]);
+	// Function that is used to toggle dark mode
+	const toggleFn = () => {
+		setDarkMode((currDarkMode) => !currDarkMode);
+	};
 
-  // Function that is used to toggle dark mode
-  const toggleFn = () => {
-    setDarkMode((currDarkMode) => !currDarkMode);
-  };
-
-  return (
-    <DarkModeContext.Provider value={{ darkMode, toggleFn }}>
-      {props.children}
-    </DarkModeContext.Provider>
-  );
+	return (
+		<DarkModeContext.Provider value={{ darkMode, toggleFn }}>
+			{props.children}
+		</DarkModeContext.Provider>
+	);
 };
 
 export { DarkModeContext, DarkModeContextProvider };
